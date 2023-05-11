@@ -3,66 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <title>El mundo de Ghibli</title>
-
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="/Images/favicon.png"/>
   </head>
   <body>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-
-    <main>
-      <div class="sidemenu">
-        <nav>
-          <ul>
-            <li>
-              Búsqueda
-              <picture
-                ><img src="Images/iconoBusqueda.png" class="icon"
-              /></picture>
-            </li>
-            <li>
-              Películas
-              <picture class="icon"
-                ><img src="Images\iconoTotoro.png" class="icon"
-              /></picture>
-            </li>
-            <li>
-              Noticias
-              <picture class="icon">
-                <img src="Images\iconoCalcifer.png" class="icon"
-              /></picture>
-            </li>
-            <li>
-              Año
-              <picture
-                ><img src="Images\iconoSinCara.png" class="icon"
-              /></picture>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="initialText">
-        <h1>¡Bienvenidos al mundo Ghibli!</h1>
-        <p>
-          Este sitio está dedicado a todos los amantes de las películas de
-          Studio Ghibli, donde podrán disfrutar de una amplia gama de
-          información, noticias y contenido multimedia relacionado con las
-          películas del estudio. Desde los mundos mágicos y maravillosos de "El
-          viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos conmovedores
-          y emocionales de "La tumba de las luciérnagas" y "El viento se
-          levanta", Studio Ghibli ha dejado una huella indeleble en el mundo del
-          cine y la cultura popular. <br />
-          Esperamos que disfruten su visita y que esta sea el comienzo de una
-          emocionante aventura en el mundo de Ghibli. ¡Bienvenidos al mundo de
-          la magia y la creatividad!
-        </p>
-        <picture>
-          <img src="Images\logo.png" class="loge" />
-        </picture>
-        <h2>Películas más vistas</h2>
-      </div>
-    </main>
-    <img class="carrusel" src="Images\carrusel.png" />
+    <picture>
+      <img class="background-image" src="Images/Slice.png" alt="background-image">
+    </picture>
+    <picture>
+      <img class="background-gradient" src="/Images/dark-background.png" alt="background-gradient">
+    </picture>
+    <aside class="sidemenu">
+      <nav>
+        <ul>
+          <div>
+            <li>Búsqueda</li>
+            <picture class="icon-container">
+              <img src="Images/iconoBusqueda.png" class="icon"/>
+            </picture>
+              </div>
+              <div>
+                <li>Películas</li>
+                <picture class="icon-container">
+                  <img src="Images\iconoTotoro.png" class="icon"/>
+                </picture>
+              </div>
+              <div>
+                <li>Noticias</li>
+                  <picture class="icon-container">
+                    <img src="Images\iconoCalcifer.png" class="icon"/>
+                  </picture>
+                </div>
+                <div>
+                  <li>Año</li>
+                  <picture class="icon-container">
+                    <img src="Images\iconoSinCara.png" class="icon"/>
+                  </picture>
+                </div>
+              </ul>
+            </nav>
+          </aside>
+          <main>
+          <div class="container">
+          <div class="welcome-container">
+            <div class="welcome-text" >
+              <h1>¡Bienvenidos al mundo Ghibli!</h1>
+              <p>
+                Este sitio está dedicado a todos los amantes de las películas de
+                Studio Ghibli, donde podrán disfrutar de una amplia gama de
+                información, noticias y contenido multimedia relacionado con las
+                películas del estudio. Desde los mundos mágicos y maravillosos de "El
+                viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos conmovedores
+                y emocionales de "La tumba de las luciérnagas" y "El viento se
+                levanta", Studio Ghibli ha dejado una huella indeleble en el mundo del
+                cine y la cultura popular.</p>
+              <p>
+                Esperamos que disfruten su visita y que esta sea el comienzo de una
+                emocionante aventura en el mundo de Ghibli. ¡Bienvenidos al mundo de
+                la magia y la creatividad!</p>
+            </div>
+            <picture class="logo-container">
+              <img src="Images\logo.png" class="loge" />
+            </picture>
+          </div>
+            <h2>Películas más vistas</h2>
+          <div id="gallery"></div>
+        </div>
+      </main>
   </body>
   <footer>
     <h3>@DataLovers20</h3>

@@ -1,7 +1,6 @@
 // export const mostViewed = () => {
 //   const allPosters = data.films.map(movies => movies.poster)
 
-<<<<<<< HEAD
 export const example = () => {
   return "example";
 };
@@ -30,7 +29,6 @@ point.forEach((cadaPunto, i) => {
     point[i].classList.add("active");
   });
 });
-=======
 
 //   const posters = allPosters.slice(0, 5)
 //   //Usar .sort cuando logremos traer los viewed con las imágenes
@@ -50,4 +48,3 @@ point.forEach((cadaPunto, i) => {
 // export const anotherExample = () => {
 //   return 'OMG';
 // };
->>>>>>> 1979c79814e7fc2624fb9108357cf02a633baa5b

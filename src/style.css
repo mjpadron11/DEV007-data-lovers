@@ -250,3 +250,49 @@ ul {
   margin-left: 350px;
   height: 300px;
 }
+
+.carrousel {
+  margin-top: -300px;
+  margin-left: 350px;
+  width: 90%;
+  height: 300px;
+  max-width: 1920;
+  padding: 2em;
+  overflow: hidden;
+  @include neo(1, 1em, 1em);
+}
+.carrousel .big {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  @include neo(1, 1em, 1em);
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.carrousel .img {
+  width: calc(100% / 5);
+  min-height: 10vh;
+  @include neo(1, 1em, 1em);
+}
+.carrousel .points {
+  margin: 16px 0 0;
+  color: rgb(73, 118, 143);
+  padding: 6px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .point {
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+  background-color: rgb(73, 118, 143);
+  @include neo(1, 1em, 1em);
+}
+.carrousel .point.active {
+  background-color: rgb(46, 62, 70);
+}

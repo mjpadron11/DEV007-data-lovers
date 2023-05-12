@@ -212,6 +212,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
       "release_date": "1988",
       "rt_score": "93",
+      "most-viewed":"3",
       "people": [
         {
           "id": "986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
@@ -997,6 +998,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg",
       "release_date": "1997",
       "rt_score": "92",
+      "most-viewed":"5",
       "people": [
         {
           "id": "ba924631-068e-4436-b6de-f3283fa848f0",
@@ -1205,6 +1207,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
       "release_date": "2001",
       "rt_score": "97",
+      "most-viewed":"2",
       "people": [
         {
           "id": "134a568b-ac18-4696-a53e-4f0757d1c037",
@@ -1473,6 +1476,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg",
       "release_date": "2004",
       "rt_score": "87",
+      "most-viewed": "1",
       "people": [
         {
           "id": "fa9b410f-cad4-457d-ac71-86b0afa6cf0a",
@@ -1718,6 +1722,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/5/50/Ponyo_on_the_Cliff_by_the_Sea.jpg",
       "release_date": "2008",
       "rt_score": "92",
+      "most-viewed":"4",
       "people": [
         {
           "id": "a10f64f3-e0b6-4a94-bf30-87ad8bc51607",

@@ -4,12 +4,16 @@
     <meta charset="utf-8" />
     <title>El mundo de Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
-    <h2>ESTAMOS PROBANDO GITHUB, acá estamos probando el pull y push, tercera prueba de git pull y push</h2>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
     <picture>
       <img
         class="background-image"
@@ -81,25 +85,60 @@
         </div>
         <h2>Películas más vistas</h2>
         <!-- Inicio carrusel -->
-        <div class="carrousel">
-          <div class="big">
-            <img src="Images/carr1.png" alt="img1" class="img" />
-            <img src="Images/carr2.png" alt="img1" class="img" />
-            <img src="Images/carr3.png" alt="img1" class="img" />
-            <img src="Images/carr4.png" alt="img1" class="img" />
-            <img src="Images/carr5.png" alt="img1" class="img" />
+        <section id="movies">
+          <div class="cont"></div>
+          <!-- Acá comienza el carrusel -->
+          <div class="container">
+            <div class="swipper movies-slider">
+              <div class="swiper-wrapper">
+                <!-- inserción de imagne -->
+                <div class="swiper-slide movies-slide">
+                  <div class="movies-slide-img">
+                    <img src="Images/carr1.png" alt="movies" />
+                  </div>
+                </div>
+                <div class="swiper-slide movies-slide">
+                  <div class="movies-slide-img">
+                    <img src="Images/carr2.png" alt="movies" />
+                  </div>
+                </div>
+                <div class="swiper-slide movies-slide">
+                  <div class="movies-slide-img">
+                    <img src="Images/carr3.png" alt="movies" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide movies-slide">
+                  <div class="movies-slide-img">
+                    <img src="Images/carr4.png" alt="movies" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide movies-slide">
+                  <div class="movies-slide-img">
+                    <img src="Images/carr5.png" alt="movies" />
+                  </div>
+                </div>
+              </div>
+              <!-- botones -->
+              <div clas="movies-slider-control">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
           </div>
-          <ul class="points">
-            <li class="point"></li>
-            <li class="point"></li>
-            <li class="point"></li>
-            <li class="point"></li>
-            <li class="point"></li>
-          </ul>
-        </div>
+        </section>
         <!-- Fin carrusel -->
       </div>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </body>
   <footer>
     <h3>@DataLovers20</h3>

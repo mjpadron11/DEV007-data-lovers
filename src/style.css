@@ -261,27 +261,47 @@ h2 {
 
 .search{
   position: relative;
-  background-color: red;
 }
 
 
 .search-input{
-  width: 0px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
   padding: 1rem;
+  opacity: 0;
+  transition: all .5s ease;
+  border-radius: 20px;
+  background-color: rgb(9, 98, 98);
+  position: relative;
+  z-index: 1000;
 }
 
+.search-input::placeholder{
+  color: #ffffff;
+}
 .search-input:hover{
   width: 100%;
+  opacity: 1;
+}
+
+.search-input:focus{
+  width: 100%;
+  opacity: 1;
 }
 
 .search-icon{
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
 }
+
+/* .search-icon:hover{
+  opacity: 0;
+} */
 
 /* Inicio carrusel */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");

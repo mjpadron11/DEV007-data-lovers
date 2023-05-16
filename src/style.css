@@ -163,8 +163,8 @@ picture {
 }
 
 main {
-  max-width: 85%;
-  margin-left: 15%;
+  max-width: 900px;
+  margin: auto;
   padding-top: 3rem;
   height: 100vh;
   display: flex;
@@ -302,6 +302,17 @@ h2 {
 /* .search-icon:hover{
   opacity: 0;
 } */
+
+
+#gallery{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.gallery__img{
+  width: 15%;
+}
 
 /* Inicio carrusel */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");

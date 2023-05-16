@@ -258,20 +258,27 @@ h2 {
 }
 
 .search{
-  display: flex;
+  position: relative;
+  background-color: red;
 }
 
+
 .search-input{
-  height: 30px;
   width: 0px;
-  border-radius: 20px;
-  color: #FFFFFF;
-  border-color: none;
-  resize: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 .search-input:hover{
-  width: 240px;
+  width: 100%;
+}
+
+.search-icon{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
 }
 
 /* Inicio carrusel */

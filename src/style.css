@@ -1,6 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
 */
 
 html,
@@ -239,6 +239,8 @@ ul {
   flex-direction: column;
   gap: 2rem;
   max-width: 640px;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 h1 {
@@ -254,7 +256,7 @@ h2 {
 }
 
 .loge {
-  height: 100%;
+  height: 80%;
 }
 
 /* Inicio carrusel */

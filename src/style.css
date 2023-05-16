@@ -259,6 +259,23 @@ h2 {
   height: 80%;
 }
 
+.search{
+  display: flex;
+}
+
+.search-input{
+  height: 30px;
+  width: 0px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  border-color: none;
+  resize: none;
+}
+
+.search-input:hover{
+  width: 240px;
+}
+
 /* Inicio carrusel */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 *,

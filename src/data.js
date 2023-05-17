@@ -1,6 +1,6 @@
 import data from './data/ghibli/ghibli.js';
 const gallery = document.getElementById("gallery");
-const allMovies = document.getElementById("all-movies")
+// const allMovies = document.getElementById("all-movies")
 
 export const mostViewed = () => {
   const allPosters = data.films.filter(movies => movies.most_viewed)
@@ -24,26 +24,26 @@ export const mostViewed = () => {
     gallery.appendChild(images[i])
   }
 
-  for (let i = 0; i <= images.length ; i++) {
-    allMovies.appendChild(images[i])
-  }
+  // for (let i = 0; i <= images.length ; i++) {
+  //   allMovies.appendChild(images[i])
+  // }
 
 }
 
 
-export const showMovies = () => {
-  data.forEach(movie => {
-    const movieDiv = document.createElement("div");
-    const movieTitle = document.createElement("h2");
-    const movieImage = document.createElement("img");
+// export const showMovies = () => {
+//   data.forEach(movie => {
+//     const movieDiv = document.createElement("div");
+//     const movieTitle = document.createElement("h2");
+//     const movieImage = document.createElement("img");
 
     
-    movieTitle.textContent = movie.title;
-    movieImage.src = movie.poster;
+//     movieTitle.textContent = movie.title;
+//     movieImage.src = movie.poster;
 
-    movieDiv.appendChild(movieTitle);
-    movieDiv.appendChild(movieImage);
+//     movieDiv.appendChild(movieTitle);
+//     movieDiv.appendChild(movieImage);
 
-    allMovies.appendChild(movieDiv)
-  })
-}
+//     allMovies.appendChild(movieDiv)
+//   })
+// }

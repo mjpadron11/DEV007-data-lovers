@@ -1,5 +1,4 @@
-import { mostViewed } from './data.js';
-// import { Movies } from './data.js';
+import { mostViewed, showMovies } from './data.js';
 
 mostViewed();
-// Movies();
+showMovies();

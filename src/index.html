@@ -11,11 +11,11 @@
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
-    <h2>prueba 1000 hola</h2>
-    <h2>otro</h2>
     <div id="root"></div>
+    <!-- Data de Ghibli -->
     <script src="main.js" type="module"></script>
     <script src="data.js" type="module"></script>
+    <!-- Imagen de fondo -->
     <picture>
       <img
         class="background-image"
@@ -23,6 +23,7 @@
         alt="background-image"
       />
     </picture>
+    <!-- Gradiente de fondo -->
     <picture>
       <img
         class="background-gradient"
@@ -30,9 +31,11 @@
         alt="background-gradient"
       />
     </picture>
+    <!-- Barra lateral con íconos -->
     <aside class="sidemenu">
       <nav>
         <ul>
+          <!-- ícono/barra de buscador -->
           <div class="search">
             <input class="search-input" type="text" id="search-input" placeholder="Buscar"/>
             <picture class="icon-container">
@@ -62,31 +65,36 @@
     </aside>
     <main>
       <div class="container">
+        <!--Título-->
         <div class="welcome-container">
-          <div class="welcome-text">
-            <h1>¡Bienvenidos al mundo Ghibli!</h1>
-            <h3>Esto es para el commit</h3>
-            <p>
-              Este sitio está dedicado a todos los amantes de las películas de
-              Studio Ghibli, donde podrán disfrutar de una amplia gama de
-              información, noticias y contenido multimedia relacionado con las
-              películas del estudio. Desde los mundos mágicos y maravillosos de
-              "El viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos
-              conmovedores y emocionales de "La tumba de las luciérnagas" y "El
-              viento se levanta", Studio Ghibli ha dejado una huella indeleble
-              en el mundo del cine y la cultura popular.
-            </p>
+          <h1>¡Bienvenidos al mundo Ghibli!</h1>
+        </div>
+        <!--Texto de primer párrafo-->
+        <div class="welcome-text">
+          <p>
+            Este sitio está dedicado a todos los amantes de las películas de
+            Studio Ghibli, donde podrán disfrutar de una amplia gama de
+            información, noticias y contenido multimedia relacionado con las
+            películas del estudio. Desde los mundos mágicos y maravillosos de
+            "El viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos
+            conmovedores y emocionales de "La tumba de las luciérnagas" y "El
+            viento se levanta", Studio Ghibli ha dejado una huella indeleble
+            en el mundo del cine y la cultura popular.
+          </p>
+          <!--Texto de segundo párrafo-->
             <p>
               Esperamos que disfruten su visita y que esta sea el comienzo de
               una emocionante aventura en el mundo de Ghibli. ¡Bienvenidos al
               mundo de la magia y la creatividad!
             </p>
           </div>
+        <!--Logo de Ghibli-->
           <picture class="logo-container">
             <img src="Images\logo.png" class="loge" />
           </picture>
+        <div class="secondTitle">
+          <h2>Películas más vistas</h2>
         </div>
-        <h2>Películas más vistas</h2>
         <!-- Inicio carrusel -->
         <section id="movies">
           <div class="cont"></div>
@@ -110,13 +118,11 @@
                     <img src="Images/carr3.png" alt="movies" />
                   </div>
                 </div>
-
                 <div class="swiper-slide movies-slide">
                   <div class="movies-slide-img">
                     <img src="Images/carr4.png" alt="movies" />
                   </div>
                 </div>
-
                 <div class="swiper-slide movies-slide">
                   <div class="movies-slide-img">
                     <img src="Images/carr5.png" alt="movies" />
@@ -133,18 +139,11 @@
         <!-- Fin carrusel -->
       </div>
     </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </body>
   <footer>
+    <div class="contac">
     <h3>@DataLovers20</h3>
     *Esta página se sigue actualizando
+  </div>
   </footer>
 </html>

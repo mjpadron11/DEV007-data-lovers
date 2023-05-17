@@ -127,7 +127,7 @@ body {
   line-height: 1.5;
 }
 
-/*
+
 ol,
 ul {
   list-style: none;
@@ -151,14 +151,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;0,400;1,200&family=Roboto:wght@100&display=swap");
 
-picture {
+picture{
   width: 80%;
   height: 80%;
 }
+
 header {
 }
 
@@ -285,7 +286,7 @@ ul {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.welcome-container , .welcome-text{
+.welcome-container{
   display: flex;
   border-radius: 30px;
   padding: 2rem;
@@ -296,7 +297,8 @@ ul {
 
 .welcome-text {
   display: flex;
-  text-align:  center;
+  flex-direction: column;
+  text-align: left;
   flex-direction: center;
   gap: 2rem;
   max-width: 1400px;

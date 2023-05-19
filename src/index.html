@@ -23,7 +23,7 @@
     <picture>
       <img
         class="background-gradient"
-        src="./Images/dark-background.png"
+        src="Images/dark-background.png"
         alt="background-gradient"
       />
     </picture>
@@ -33,45 +33,57 @@
         <ul>
           <!-- ícono/barra de buscador -->
           <div class="search">
-            <input class="search-input" type="text" id="search-input" placeholder="Buscar"/>
+            <input
+              class="search-input"
+              type="text"
+              id="search-input"
+              placeholder="Buscar"
+            />
             <picture class="icon-container">
               <img src="Images/iconoBusqueda.png" class="search-icon" />
             </picture>
           </div>
           <a href="allMovies.html">
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoTotoro.png" class="icon" />
-            </picture>
-            <li>Películas</li>
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoTotoro.png" class="icon" />
+              </picture>
+              <li>Películas</li>
             </div>
           </a>
           <a>
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoCalcifer.png" class="icon" />
-            </picture>
-            <li>Noticias</li>
-          </div>
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoCalcifer.png" class="icon" />
+              </picture>
+              <li>Noticias</li>
+            </div>
           </a>
           <a>
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoSinCara.png" class="icon" />
-            </picture>
-            <li>Año</li>
-          </div>
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoSinCara.png" class="icon" />
+              </picture>
+              <li>Año</li>
+            </div>
           </a>
         </ul>
       </nav>
     </aside>
+    <div class="audio-wrapper">
+      <audio controls>
+        <source src="audio/Merry-go-round.mp3" type="audio/mpeg">
+        <source src="audio/home-sweet-home.mp3" type="audio/mpeg">
+        <source src="audio/the-name-of-life.mp3" type="audio/mpeg">
+        Tu navegador no soport la etiqueta audio.
+      </audio>
+    </div>
     <main>
+      <!--Título-->
       <div class="container">
-        <!--Título-->
         <div class="welcome-container">
           <div class="welcome-text">
-            <h1>¡Bienvenidos al mundo Ghibli!</h1>
-            <p>
+            <h1>¡Bienvenidos al mundo Ghibli!</h1> <p>
               Este sitio está dedicado a todos los amantes de las películas de
               Studio Ghibli, donde podrán disfrutar de una amplia gama de
               información, noticias y contenido multimedia relacionado con las
@@ -94,12 +106,19 @@
         </div>
           <h2>Películas más vistas</h2>
           <div id="gallery"></div>
-    </main>
+          <div class="contactSocial">
+            <a href="https://www.facebook.com/groups/StudioGhibliJP"> <img class="social" id="logoF" src="./Images/contactF.png" alt= "" />
+              <a href="https://twitter.com/JP_GHIBLI/"><img class="social" id="logoT" src="./Images/contactT.png" alt= "" />
+                <a href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY"><img class="social" id="logoY" src="./Images/contactY.png" alt= "" />
+    </div>
+
   </body>
   <footer>
-    <div class="contac">
+
+    <div class="contact">
     <p>@DataLovers20<p>
     *Esta página se sigue actualizando
   </div>
   </footer>
+  </main>
 </html>

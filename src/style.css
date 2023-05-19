@@ -414,6 +414,61 @@ h2 {
   -webkit-box-orient: vertical;
 }
 
+audio{
+  margin: 1rem;
+}
+
 .gallery__img-container:hover .gallery__title {
   opacity: 1;
+}
+
+.audio-wrapper {
+  position: relative;
+  z-index: 1000;
+  margin-left: 5rem;
+  border-radius: 8px;
+}
+
+.audio-wrapper audio {
+  width: 95%;
+}
+
+.audio-wrapper audio::-webkit-media-controls-panel {
+  background-color: #076c6ca7;
+  color: #fff5f5;
+  border-radius: 8px;
+}
+
+.audio-wrapper audio::-webkit-media-controls-play-button {
+  background-color: #efeeee00;
+  color: #fff;
+}
+
+.audio-wrapper audio::-webkit-media-controls-volume-slider {
+  background-color: #ccc;
+}
+
+.gallery__img-container:hover .gallery__title {
+  opacity: 1;
+}
+.contactSocial {
+  display: flex;
+  justify-content: center;
+  transition: 0,5s;
+  object-fit: cover;
+
+}
+.social {
+  height: 50px;
+  margin: 20px;
+  margin-top: 150px;
+}
+
+.contact {
+  text-align: center;
+}
+li {
+  margin: 10%;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
 }

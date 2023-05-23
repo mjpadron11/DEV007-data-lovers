@@ -1,4 +1,4 @@
-import { mostViewed } from "./data.js";
+import { carrusel, mostViewed } from "./data.js";
 import { movies } from "./data.js";
 import { searchMovies } from "./data.js";
 

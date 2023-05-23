@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.carrousel .big {
+.carrousel .allMovies {
   width: 200%;
   display: flex;
   flex-flow: row nowrap;
@@ -29,7 +29,7 @@
 }
 
 .carrousel .img {
-  width: calc(100% / 5 - 2em);
+  width: calc(100% / 2 - 2em);
   min-height: 10vh;
   color: var(--negro);
   transition: all 0.4s ease;
@@ -39,7 +39,7 @@
     inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
 
-.carrousel .points {
+.carrousel .puntos {
   width: 100%;
   margin: 1em 0 0;
   padding: 0.4em;
@@ -49,7 +49,7 @@
   align-items: center;
 }
 
-.carrousel .point {
+.carrousel .punto {
   width: 2em;
   height: 2em;
   margin: 1em 1em 0;
@@ -62,6 +62,6 @@
     inset 0 0 0 transparent;
 }
 
-.carrousel .point.activo {
-  background-color: rgb(0, 18, 117);
+.carrousel .punto.activo {
+  background-color: lightblue;
 }

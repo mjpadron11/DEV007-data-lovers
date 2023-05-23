@@ -7,6 +7,36 @@
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
+
+    <div class="barraNav">
+      <div class="audio-wrapper">
+        <audio controls>
+          <source src="audio/Merry-go-round.mp3" type="audio/mpeg">
+          Tu navegador no soport la etiqueta audio.
+        </audio>
+      </div>
+      <div class="navegador1">
+        <a class="home" href="#">Inicio</a>
+      </div>
+      <div class="navegador2">
+        <label for="movies">
+        <input type="option" id="deA-Z" placeholder="El mundo Ghibli de A-Z" >
+      </label>
+      </div>
+      <!-- ícono/barra de buscador -->
+      <div class="search">
+        <input
+          class="search-input"
+          type="text"
+          id="search-input"
+          placeholder="Buscar"
+        />
+        <picture class="icon-container">
+          <img src="Images/iconoBusqueda.png" class="search-icon" />
+        </picture>
+      </div>
+    </div>
+
     <div id="root"></div>
     <!-- Data de Ghibli -->
     <script src="main.js" type="module"></script>
@@ -31,24 +61,13 @@
     <aside class="sidemenu">
       <nav>
         <ul>
-          <!-- ícono/barra de buscador -->
-          <div class="search">
-            <input
-              class="search-input"
-              type="text"
-              id="search-input"
-              placeholder="Buscar"
-            />
-            <picture class="icon-container">
-              <img src="Images/iconoBusqueda.png" class="search-icon" />
-            </picture>
-          </div>
+
           <a href="allMovies.html">
             <div>
               <picture class="icon-container">
                 <img src="Images\iconoTotoro.png" class="icon" />
               </picture>
-              <li>Películas</li>
+              <li>Película</li>
             </div>
           </a>
           <a>
@@ -59,25 +78,18 @@
               <li>Noticias</li>
             </div>
           </a>
-          <a>
+          <a>a
             <div>
               <picture class="icon-container">
                 <img src="Images\iconoSinCara.png" class="icon" />
               </picture>
-              <li>Año</li>
+              <li>Director</li>
             </div>
           </a>
         </ul>
       </nav>
     </aside>
-    <div class="audio-wrapper">
-      <audio controls>
-        <source src="audio/Merry-go-round.mp3" type="audio/mpeg">
-        <source src="audio/home-sweet-home.mp3" type="audio/mpeg">
-        <source src="audio/the-name-of-life.mp3" type="audio/mpeg">
-        Tu navegador no soport la etiqueta audio.
-      </audio>
-    </div>
+
     <main>
       <!--Título-->
       <div class="container">
@@ -122,3 +134,4 @@
   </footer>
   </main>
 </html>
+

@@ -10,12 +10,8 @@
     inset 0 0 0 transparent, inset 0 0 0 transparent;
   overflow: hidden;
 }
-<<<<<<< HEAD
-.carrousel .big {
-=======
 
 .carrousel .allMovies {
->>>>>>> 6964981442f96065ff007b1f1cd65feafe66359c
   width: 200%;
   display: flex;
   flex-flow: row nowrap;

@@ -123,16 +123,14 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
-.welcome-text{
+.welcome-text {
   line-height: 1.5;
 }
-
 
 ol,
 ul {
   list-style: none;
 }
-
 
 blockquote,
 q {
@@ -155,7 +153,7 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;0,400;1,200&family=Roboto:wght@100&display=swap");
 
-picture{
+picture {
   width: 80%;
   height: 80%;
 }
@@ -182,7 +180,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
@@ -191,7 +189,7 @@ picture {
   height: 100%;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -269,10 +267,9 @@ ul {
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: ease;
-
 }
 
-.icon:hover{
+.icon:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
@@ -286,13 +283,13 @@ ul {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.welcome-container{
+.welcome-container {
   display: flex;
   border-radius: 30px;
   padding: 2rem;
   background: rgba(5, 74, 74, 0.512);
   gap: 2rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .welcome-text {
@@ -302,7 +299,7 @@ ul {
   flex-direction: center;
   gap: 2rem;
   max-width: 1400px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1 {
@@ -323,38 +320,37 @@ h2 {
   height: 80%;
 }
 
-.search{
+.search {
   position: relative;
 }
 
-
-.search-input{
+.search-input {
   width: 60px;
   height: 20px;
   color: #ffffff;
   padding: 1rem;
   opacity: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   border-radius: 20px;
   background-color: rgb(9, 98, 98);
   position: relative;
   z-index: 1000;
 }
 
-.search-input::placeholder{
+.search-input::placeholder {
   color: #ffffff;
 }
-.search-input:hover{
+.search-input:hover {
   width: 100%;
   opacity: 1;
 }
 
-.search-input:focus{
+.search-input:focus {
   width: 100%;
   opacity: 1;
 }
 
-.search-icon{
+.search-icon {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -367,20 +363,19 @@ h2 {
   opacity: 0;
 } */
 
-
-#gallery{
+#gallery {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
   width: 100%;
 }
-.gallery__img-container{
+.gallery__img-container {
   cursor: pointer;
   width: 20%;
   position: relative;
 }
 
-.gallery__img{
+.gallery__img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -389,16 +384,15 @@ h2 {
   -webkit-transition-timing-function: ease;
 }
 
-.gallery__img:hover{
+.gallery__img:hover {
   transform: scale(1.2);
-  box-shadow:
-    0 0 15px #66bbcaf7,  /* inner white */
-    0 0 20px rgba(11, 42, 85, 0.998), /* middle blue */
-    0 0 100px rgb(14, 120, 120); /* outer cyan */
-    filter: brightness(0.4);
+  box-shadow: 0 0 15px #66bbcaf7,
+    /* inner white */ 0 0 20px rgba(11, 42, 85, 0.998),
+    /* middle blue */ 0 0 100px rgb(14, 120, 120); /* outer cyan */
+  filter: brightness(0.4);
 }
 
-.gallery__title{
+.gallery__title {
   position: absolute;
   top: 0;
   right: 5%;
@@ -414,7 +408,7 @@ h2 {
   -webkit-box-orient: vertical;
 }
 
-audio{
+audio {
   margin: 1rem;
 }
 
@@ -454,9 +448,8 @@ audio{
 .contactSocial {
   display: flex;
   justify-content: center;
-  transition: 0,5s;
+  transition: 0, 5s;
   object-fit: cover;
-
 }
 .social {
   height: 50px;

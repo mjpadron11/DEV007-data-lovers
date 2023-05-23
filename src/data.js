@@ -32,7 +32,7 @@ export const movies = () => {
     img.classList.add("posters");
     img.src = item.poster;
     img.width = 100;
-    img.heigth = 100;
+    img.heigth = 1000;
     //return finaliza el callback
     return img;
   });
@@ -42,11 +42,12 @@ export const movies = () => {
 export const searchMovies = () => {
   let text = document.getElementById("search-input").value;
 
-  let filteredMovies = data.films.filter((item) =>
-    item.title.toLowerCase().startsWith(text.toLowerCase())
+  let searchedMovies = data.films.filter((item) =>
+    //se cambia el star with por includes(busca si está en el array y da un boolean)
+    item.title.toLowerCase().includes(text.toLowerCase())
   );
 
-  const imagesMovies = filteredMovies.map((item) => {
+  const imagesMovies = searchedMovies.map((item) => {
     const img = document.createElement("img");
     img.classList.add("posters");
     img.src = item.poster;
@@ -58,42 +59,6 @@ export const searchMovies = () => {
   allMovies.innerHTML = "";
   imagesMovies.map((image) => allMovies.appendChild(image));
 };
-
-export const carrusel = () => {
-  const big = document.querySelector(".big");
-  const point = document.querySelectorAll(".point");
-
-  // Cuando CLICK en punto
-  // Saber la posición de ese punto
-  // Aplicar un transform translateX al grande
-  // QUITAR la clase activo de TODOS puntos
-  // AÑADIR la clase activo al punto que hemos hecho CLICK
-
-  // Recorrer TODOS los punto
-  point.forEach((cadaPoint, i) => {
-    // Asignamos un CLICK a cadaPunto
-    point[i].addEventListener("click", () => {
-      // Guardar la posición de ese PUNTO
-      let posicion = i;
-      // Calculando el espacio que debe DESPLAZARSE el GRANDE
-      let operacion = posicion * -20;
-
-      // MOVEMOS el grand
-      big.style.transform = `translateX(${operacion}%)`;
-
-      // Recorremos TODOS los punto
-      point.forEach((cadaPoint, i) => {
-        // Quitamos la clase ACTIVO a TODOS los punto
-        point[i].classList.remove("activo");
-      });
-      // Añadir la clase activo en el punto que hemos hecho CLICK
-      point[i].classList.add("activo");
-    });
-  });
-};
-
-// let allPosters = data.films.sort((movies) => movies.rt_score);
-// allPosters = allPosters.slice(0, 5);
 
 // for (let i = 0; i <= images.length ; i++) {
 //   allMovies.appendChild(images[i])

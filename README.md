@@ -36,7 +36,7 @@ Para lo anterior se ha desarrollado una página web de almacenamiento de datos q
 
 ## 3. Metodología de trabajo
 
-#####Repositorio
+##### Repositorio
 
 El proyecto de desarrollo web se basa en la información almacenada en un archivo `JSON`, la interfaz y estética se realizaron a través de la edición de archivo `HTML`y`CSS` y la funcionalidad se dió a través del lenguaje `Javascript`.
 
@@ -44,13 +44,13 @@ Todo esto se implementó en un repositorio de Github para trabajar de manera col
 
 _Es importante considerar que dentro de la planificación se consideró No usar ningún tipo de librería o framework en el desarrollo_
 
-####Planificación
+#### Planificación
 
 Se utilizó la plataformar Trello para Planificar la realización del trabajo, para esto se dividió el tablero en tareas a realizar, metas y tareas realizadas por Sprint, considerando la durabilidad de cada Sprint en periodos de 1 semana.
 
 Cabe destacar que todo esto se basó en un backlog de usuario por lo que el primer paso a realizar fue la creación de un formulario con el objetivo de tener una idea de qué tan conocido es el estudio y cuáles son las películas más nombradas por el público.
 
-####Historias de Usuario
+#### Historias de Usuario
 
 Una vez recolectadas las respuestas del formulario, se procedió a establecer las principales historias de usuario del proyecto las cuales fueron:
 
@@ -59,7 +59,7 @@ Una vez recolectadas las respuestas del formulario, se procedió a establecer la
 3.
 4.
 
-#####Prototipos
+##### Prototipos
 
 En base a los resultados del formulario y las historias de usuario se decidió comenzar a crear la parte visual del proyecto, generando un prototipo de **baja fidelidad** en el que se defina la manera en que se responderá a las peticiones de usuario:
 
@@ -89,7 +89,7 @@ Una vez realizado el prototipo de baja fidelidad se comenzar a realizar su contr
 
 > Bosquejo de prototipo de alta fidelidad realizado en Figma
 
-####Ejecución
+#### Ejecución
 
 <!--
 ## 6. Hacker edition

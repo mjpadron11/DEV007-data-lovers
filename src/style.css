@@ -237,17 +237,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  /* background-color: rgba(148, 143, 143, 0.21); */
+  background-color: rgba(148, 143, 143, 0.21);
   width: 15px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(5, 74, 74, 0.512);
+  background-color: rgb(5, 124, 124);
   border-radius: 8px;
 }
 
 body::-webkit-scrollbar-track{
-  background-color: rgb(5, 124, 124);
+  background-color: transparent;
 }
 
 picture {
@@ -505,8 +505,3 @@ li {
   font-family: "Roboto Mono", monospace;
   align-items: center;
 }
-
-  .movies-container{
-    display: none;
-  }
-

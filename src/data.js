@@ -60,6 +60,25 @@ export const searchMovies = () => {
   imagesMovies.map((image) => allMovies.appendChild(image));
 };
 
+// export const orderMovies = () => {
+//   let title = document.getElementById("allMovies").value;
+
+//   let orderdMovies = data.films.sort((item) =>
+//     item.title.toLowerCase().sort(text.toLowerCase())
+//   );
+//   const imagesMovies = title.map((item) => {
+//     const img = document.createElement("img");
+//     img.classList.add("posters");
+//     img.src = item.poster;
+//     img.width = 100;
+//     img.heigth = 100;
+//     //return finaliza el callback
+//     return img;
+//   });
+//   allMovies.innerHTML = "";
+//   imagesMovies.map((image) => allMovies.appendChild(image));
+// };
+
 // for (let i = 0; i <= images.length ; i++) {
 //   allMovies.appendChild(images[i])
 // }

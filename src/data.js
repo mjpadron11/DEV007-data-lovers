@@ -1,6 +1,6 @@
 import data from "./data/ghibli/ghibli.js";
 const gallery = document.getElementById("gallery");
-const allMovies = document.getElementById("allMovies");
+const allMovies = document.getElementById("allMovies")
 
 export const mostViewed = () => {
   const allPosters = data.films.filter((movies) => movies.most_viewed);

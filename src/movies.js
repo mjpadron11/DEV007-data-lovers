@@ -1,4 +1,4 @@
-Const movies = document.getElementById("movies");
+// Const movies = document.getElementById("movies");
 // const allMovies = document.getElementById("all-movies")
 
 export const mostViewed = () => {

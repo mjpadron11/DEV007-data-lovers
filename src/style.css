@@ -119,10 +119,66 @@ section {
   z-index: 1;
 }
 body {
-  color: rgb(255, 255, 255);
+
+  background-color:  rgb(5, 124, 124);
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+
 }
+.barraNav{
+  background-color:  rgb(5, 124, 124);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  display: flex;
+  align-items: line;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  padding: 1rem;
+}
+.navegador1 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 80px;
+}
+.navegador2{
+  margin-left: 20px;
+
+}
+audio{
+  margin: 1rem;
+}
+
+.gallery__img-container:hover .gallery__title {
+  opacity: 1;
+}
+
+.audio-wrapper {
+  position: relative;
+  z-index: 1000;
+  margin-left: 5rem;
+  border-radius: 8px;
+}
+
+.audio-wrapper audio {
+  width: 95%;
+}
+
+.audio-wrapper audio::-webkit-media-controls-panel {
+  background-color: #076c6ca7;
+  color: #fff5f5;
+  border-radius: 8px;
+}
+
+.audio-wrapper audio::-webkit-media-controls-play-button {
+  background-color: #efeeee00;
+  color: #fff;
+}
+
+.audio-wrapper audio::-webkit-media-controls-volume-slider {
+  background-color: #ccc;
+}
+
 .welcome-text{
   line-height: 1.5;
 }
@@ -222,9 +278,9 @@ main {
   z-index: 100;
   font-size: small;
   height: 100vh;
-  top: 0;
+  top:30;
   left: 0;
-  width: 6%;
+  width: 8%;
   background-color: rgba(5, 74, 74, 0.512);
   border-radius: 0 40% 40% 0;
 }
@@ -233,7 +289,7 @@ nav {
   display: absolute;
   flex-direction: center;
   justify-content: center;
-  height: 100%;
+  height: 70%;
 }
 
 .list-container {
@@ -265,7 +321,7 @@ ul {
 }
 
 .icon {
-  width: 80%;
+  width: 65%;
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: ease;
@@ -325,6 +381,7 @@ h2 {
 
 .search{
   position: relative;
+
 }
 
 
@@ -414,39 +471,6 @@ h2 {
   -webkit-box-orient: vertical;
 }
 
-audio{
-  margin: 1rem;
-}
-
-.gallery__img-container:hover .gallery__title {
-  opacity: 1;
-}
-
-.audio-wrapper {
-  position: relative;
-  z-index: 1000;
-  margin-left: 5rem;
-  border-radius: 8px;
-}
-
-.audio-wrapper audio {
-  width: 95%;
-}
-
-.audio-wrapper audio::-webkit-media-controls-panel {
-  background-color: #076c6ca7;
-  color: #fff5f5;
-  border-radius: 8px;
-}
-
-.audio-wrapper audio::-webkit-media-controls-play-button {
-  background-color: #efeeee00;
-  color: #fff;
-}
-
-.audio-wrapper audio::-webkit-media-controls-volume-slider {
-  background-color: #ccc;
-}
 
 .gallery__img-container:hover .gallery__title {
   opacity: 1;
@@ -472,3 +496,4 @@ li {
   font-size: 15px;
   font-family: "Roboto Mono", monospace;
 }
+

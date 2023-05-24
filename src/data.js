@@ -32,7 +32,7 @@ export const movies = () => {
     img.classList.add("posters");
     img.src = item.poster;
     img.width = 100;
-    img.heigth = 1000;
+    img.heigth = 100;
     //return finaliza el callback
     return img;
   });

@@ -11,6 +11,44 @@
     <div id="root"></div>
     <script src="main.js" type="module"></script>
     <script src="data.js" type="module"></script>
+    <header>
+      <!-- Botón orden -->
+      <div class="desplegables">
+        <div class="search">
+          <input
+            class="search-input"
+            type="text"
+            id="search-input"
+            placeholder="Buscar"
+          />
+          <picture class="icon-container">
+            <img src="Images/iconoBusqueda.png" class="search-icon" />
+          </picture>
+        </div>
+        <div class="desplegable">
+          <button class="boton">Ordenar</button>
+          <div class="links">
+            <a href="#" id="orderMovies" onclick="orderMovies()"> A-Z</a>
+            <a href="#"> Z-A</a>
+            <a href="#">Año</a>
+            <a href="#">Rt score</a>
+          </div>
+        </div>
+
+        <div class="desplegable">
+          <button class="boton">Directores</button>
+          <div class="links">
+            <a href="#"> Hayao Miyazaki</a>
+            <a href="#">Isao Takahata</a>
+            <a href="#">Yoshifumi Kondō</a>
+            <a href="#">Hiroyuki Morita</a>
+            <a href="#">Gorō Miyazaki</a>
+            <a href="#">Hiromasa Yonebayashi</a>
+          </div>
+        </div>
+      </div>
+      <!-- botón desplegable -->
+    </header>
     <picture>
       <img
         class="background-image"
@@ -28,18 +66,6 @@
     <aside class="sidemenu">
       <nav>
         <ul>
-          <div class="search">
-            <input
-              class="search-input"
-              type="text"
-              id="search-input"
-              placeholder="Buscar"
-            />
-
-            <picture class="icon-container">
-              <img src="Images/iconoBusqueda.png" class="search-icon" />
-            </picture>
-          </div>
           <div>
             <picture class="icon-container">
               <img src="Images\iconoTotoro.png" class="icon" />
@@ -58,29 +84,6 @@
             </picture>
             <li>Año</li>
           </div>
-          <!-- Botón orden -->
-          <div class="desplegable">
-            <button class="boton">Ordenar</button>
-            <div class="links">
-              <a href="#" id="orderMovies" onclick="orderMovies()"> A-Z</a>
-              <a href="#"> Z-A</a>
-              <a href="#">Año</a>
-              <a href="#">Rt score</a>
-            </div>
-          </div>
-
-          <div class="desplegable">
-            <button class="boton">Filtrar por director</button>
-            <div class="links">
-              <a href="#"> Hayao Miyazaki</a>
-              <a href="#">Isao Takahata</a>
-              <a href="#">Yoshifumi Kondō</a>
-              <a href="#">Hiroyuki Morita</a>
-              <a href="#">Gorō Miyazaki</a>
-              <a href="#">Hiromasa Yonebayashi</a>
-            </div>
-          </div>
-          <!-- botón orden -->
         </ul>
       </nav>
     </aside>

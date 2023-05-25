@@ -1,3 +1,24 @@
+.inicio {
+  position: absolute;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: small;
+  cursor: pointer;
+  width: 50px;
+  margin: 5px;
+  height: 55 px;
+  color: #ffffff;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: rgb(9, 98, 98);
+  border-style: inset;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-top-color: gray;
+  border-right-color: gray;
+  border-width: 2px;
+}
 .desplegables {
   display: flex;
   position: relative;

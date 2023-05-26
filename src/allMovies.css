@@ -1,28 +1,5 @@
-.inicio {
-  position: absolute;
-  border: none;
-  padding: 1rem;
-  text-align: center;
-  font-size: small;
-  cursor: pointer;
-  width: 50px;
-  margin: 5px;
-  height: 55 px;
-  color: #ffffff;
-  margin-left: 5px;
-  border-radius: 20px;
-  background-color: rgb(9, 98, 98);
-  border-style: inset;
-  border-bottom-color: black;
-  border-left-color: black;
-  border-top-color: gray;
-  border-right-color: gray;
-  border-width: 2px;
-}
-.desplegables {
+header {
   display: flex;
-  position: relative;
-  left: 500px;
 }
 .boton {
   border: none;
@@ -43,28 +20,7 @@
   border-top-color: gray;
   border-right-color: gray;
   border-width: 2px;
-}
-
-.links a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  display: block;
-  padding: 1rem;
-  border-radius: 20px;
-  font-size: small;
-  text-align: center;
-}
-.links {
-  background-color: #fff;
-  width: 170px;
-  display: none;
-  border-radius: 20px;
-}
-.links a:hover {
-  background-color: gray;
-}
-.desplegable:hover .links {
-  display: block;
+  cursor: pointer;
 }
 
 .search-icon {

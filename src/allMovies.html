@@ -12,41 +12,35 @@
     <script src="main.js" type="module"></script>
     <script src="data.js" type="module"></script>
     <header>
-      <a class="inicio" href="index.html">Inicio 🏠</a>
-      <!-- Botón orden -->
-      <div class="desplegables">
-        <div class="search">
-          <input
-            class="search-input"
-            type="text"
-            id="search-input"
-            placeholder="Buscar"
-          />
-          <picture class="icon-container">
-            <img src="Images/iconoBusqueda.png" class="search-icon" />
-          </picture>
-        </div>
-        <div class="desplegable">
-          <button class="boton">Ordenar</button>
-          <div class="links">
-            <a href="#" id="orderMovies" onclick="orderMovies()"> A-Z</a>
-            <a href="#"> Z-A</a>
-            <a href="#">Año</a>
-            <a href="#">Rt score</a>
-          </div>
-        </div>
-        <div class="desplegable">
-          <button class="boton">Directores</button>
-          <div class="links">
-            <a href="#"> Hayao Miyazaki</a>
-            <a href="#">Isao Takahata</a>
-            <a href="#">Yoshifumi Kondō</a>
-            <a href="#">Hiroyuki Morita</a>
-            <a href="#">Gorō Miyazaki</a>
-            <a href="#">Hiromasa Yonebayashi</a>
-          </div>
-        </div>
+      <a class="boton" href="index.html">Inicio 🏠</a>
+
+      <div class="search">
+        <input
+          class="boton"
+          type="text"
+          id="search-input"
+          placeholder="Buscar"
+        />
+        <!-- <picture class="icon-container">
+          <img src="Images/iconoBusqueda.png" class="search-icon" />
+        </picture> -->
       </div>
+      <select class="boton">
+        <option value="" selected disabled hidden>Orden</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+        <option value="Año">Año</option>
+        <option value="RT score">RT Score</option>
+      </select>
+      <select id="directores" class="boton">
+        <option value="" selected disabled hidden>Directores</option>
+        <option value="Hayao Miyazaki">Hayao Miyasaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+      </select>
       <!-- botón desplegable -->
     </header>
     <picture>

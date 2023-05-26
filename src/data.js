@@ -1,8 +1,8 @@
 import data from "./data/ghibli/ghibli.js";
-const gallery = document.getElementById("gallery");
 const allMovies = document.getElementById("allMovies");
 
 export const mostViewed = () => {
+  const gallery = document.getElementById("gallery");
   const allPosters = data.films.filter((movies) => movies.most_viewed);
 
   const images = allPosters.map((item) => {
@@ -40,14 +40,35 @@ export const movies = () => {
 };
 
 export const searchMovies = () => {
-  let text = document.getElementById("search-input").value;
-
-  let searchedMovies = data.films.filter((item) =>
+  const text = document.getElementById("search-input").value;
+  const searchedMovies = data.films.filter((item) =>
     //se cambia el star with por includes(busca si está en el array y da un boolean)
     item.title.toLowerCase().includes(text.toLowerCase())
   );
 
   const imagesMovies = searchedMovies.map((item) => {
+    const img = document.createElement("img");
+    img.classList.add("posters");
+    img.src = item.poster;
+    img.width = 100;
+    img.heigth = 100;
+    //return finaliza el callback
+    return img;
+  });
+  allMovies.innerHTML = "";
+  imagesMovies.map((image) => allMovies.appendChild(image));
+};
+
+export const searchMoviesByDirector = () => {
+  const idDirector = document.getElementById("directores");
+  const selectedDirector = idDirector.options[idDirector.selectedIndex].value;
+
+  const searchMoviesByDirector = data.films.filter(
+    (item) => item.director === selectedDirector
+  );
+
+  console.log(searchMoviesByDirector);
+  const imagesMovies = searchMoviesByDirector.map((item) => {
     const img = document.createElement("img");
     img.classList.add("posters");
     img.src = item.poster;

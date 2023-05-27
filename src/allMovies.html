@@ -8,23 +8,30 @@
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-    <script src="data.js" type="module"></script>
     <header>
-      <a class="boton" href="index.html">Inicio 🏠</a>
-
-      <div class="search">
+      <div class="barTop"><!-- Barra superior -->
+      <div class="audio-wrapper">
+        <!-- Barra de audio -->
+        <audio controls>
+          <source src="audio/Merry-go-round.mp3" type="audio/mpeg" />
+          Tu navegador no soport la etiqueta audio.
+        </audio>
+      </div>
+      <div class="home"><!-- boton inicio -->
+        <a class="boton" href="index.html">Inicio 🏠</a>
+      </div>
+      <div class="search"><!-- boton buscar -->
         <input
           class="boton"
           type="text"
           id="search-input"
           placeholder="Buscar"
         />
-        <!-- <picture class="icon-container">
+        <picture class="icon-container"><!-- icono de buscar -->
           <img src="Images/iconoBusqueda.png" class="search-icon" />
-        </picture> -->
+        </picture>
       </div>
+      <div class="botonDeLaAZ"><!-- botón desplegable de la A-Z-->
       <select class="boton">
         <option value="" selected disabled hidden>Orden</option>
         <option value="A-Z">A-Z</option>
@@ -32,7 +39,9 @@
         <option value="Año">Año</option>
         <option value="RT score">RT Score</option>
       </select>
-      <select id="directores" class="boton">
+    </div>
+    <div class="director"> <!-- botón desplegable de directores-->
+      <select  id="directores" class="boton">
         <option value="" selected disabled hidden>Directores</option>
         <option value="Hayao Miyazaki">Hayao Miyasaki</option>
         <option value="Isao Takahata">Isao Takahata</option>
@@ -41,8 +50,13 @@
         <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         <option value="Hiroyuki Morita">Hiroyuki Morita</option>
       </select>
-      <!-- botón desplegable -->
+    </div>
+    </div>
     </header>
+    <!-- Data de Ghibli -->
+    <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+
     <picture>
       <img
         class="background-image"
@@ -57,31 +71,37 @@
         alt="background-gradient"
       />
     </picture>
-
-    <aside class="sidemenu">
-      <nav>
-        <ul>
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoTotoro.png" class="icon" />
-            </picture>
-            <li>Películas</li>
-          </div>
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoCalcifer.png" class="icon" />
-            </picture>
-            <li>Noticias</li>
-          </div>
-          <div>
-            <picture class="icon-container">
-              <img src="Images\iconoSinCara.png" class="icon" />
-            </picture>
-            <li>Año</li>
-          </div>
-        </ul>
-      </nav>
-    </aside>
+<!-- Barra lateral con íconos -->
+<aside class="sidemenu">
+  <nav>
+    <ul>
+      <a href="allMovies.html">
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoTotoro.png" class="icon" />
+          </picture>
+        </div>
+        <li>Película</li>
+      </a>
+      <a>
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoCalcifer.png" class="icon" />
+          </picture>
+        </div>
+        <li>Noticias</li>
+      </a>
+      <a>
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoSinCara.png" class="icon" />
+          </picture>
+        </div>
+        <li>Director</li>
+      </a>
+    </ul>
+  </nav>
+</aside>
     <main>
       <div class="container">
         <!-- Carrusel -->
@@ -91,9 +111,16 @@
         <!-- carrusel -->
       </div>
     </main>
-  </body>
-  <footer>
-    <h3>@DataLovers20</h3>
-    *Esta página se sigue actualizando
-  </footer>
+    <footer>
+      <div class="contactSocial">
+      <img class="social"  src="./Images/contactF.png" a href="https://www.facebook.com/groups/StudioGhibliJP">
+      <img class="social"  src="./Images/contactT.png"  a href="https://twitter.com/JP_GHIBLI/">
+      <img class="social"  src="./Images/contactY.png" a href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY">
+      </div>
+      <div class="contact">
+        <p>@DataLovers20<p>
+        *Esta página se sigue actualizando
+      </div>
+    </footer>
+</body>
 </html>

@@ -35,7 +35,7 @@ header {
   height: 30px;
   position: fixed;
 }
-.search{
+.search {
   margin-top: 10px;
   transform: translateX(435%);
   height: 30px;
@@ -75,14 +75,14 @@ header {
   bottom: 10%;
   transform: translateY(50%);
 }
-.botonDeLaAZ{
+.botonDeLaAZ {
   margin-top: 10px;
   transform: translateX(310%);
   height: 30px;
   position: fixed;
 }
 
-.director{
+.director {
   margin-top: 10px;
   transform: translateX(420%);
   height: 30px;
@@ -105,5 +105,3 @@ object-position: center;
 position: relative;
 }
 */
-
-

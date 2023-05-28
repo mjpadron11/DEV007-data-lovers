@@ -1,21 +1,21 @@
-import { searchMoviesByDirector } from "../src/data";
+import { mostViewed, searchMoviesByDirector } from "../src/data";
 
-describe("searchMoviesByDirector", () => {
-  it("debería ser un objeto", () => {
-    expect(typeof searchMoviesByDirector).toBe("object");
+describe("mostViewed", () => {
+  it("is a function", () => {
+    expect(typeof mostViewed).toBe("function");
   });
 
-  //   it("returns `example`", () => {
-  //     expect(example()).toBe("example");
-  //   });
-  // });
+  it("returns `example`", () => {
+    expect(example()).toBe("example");
+  });
+});
 
-  // describe("anotherExample", () => {
-  //   it("is a function", () => {
-  //     expect(typeof anotherExample).toBe("function");
-  //   });
+describe("anotherExample", () => {
+  it("is a function", () => {
+    expect(typeof anotherExample).toBe("function");
+  });
 
-  //   it("returns `anotherExample`", () => {
-  //     expect(anotherExample()).toBe("OMG");
-  //   });
+  it("returns `anotherExample`", () => {
+    expect(anotherExample()).toBe("OMG");
+  });
 });

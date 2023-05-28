@@ -11,7 +11,7 @@ if (allMovies) window.addEventListener("load", movies);
 
 const searchInput = document.getElementById("search-input");
 if (searchInput) {
-  searchInput.addEventListener("change", searchMovies);
+  searchInput.addEventListener("input", searchMovies);
 }
 const selectDirector = document.getElementById("directores");
 if (selectDirector) {

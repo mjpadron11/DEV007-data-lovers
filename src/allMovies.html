@@ -39,18 +39,20 @@
         <div class="refresh">
           <div class="botonDeLaAZ">
             <!-- botón desplegable de la A-Z-->
-            <select class="boton">
+            <select id="filters" class="boton">
               <option value="" selected disabled hidden>Orden</option>
-              <option value="A-Z">A-Z</option>
-              <option value="Z-A">Z-A</option>
-              <option value="Año">Año</option>
-              <option value="RT score">RT Score</option>
+              <option value="ascendant">A-Z</option>
+              <option value="decendant">Z-A</option>
+              <option value="year">Año</option>
+              <option value="rt-score">RT Score</option>
             </select>
           </div>
           <div class="director">
             <!-- botón desplegable de directores-->
+            <!-- <label for="">directores</label> -->
             <select id="directores" class="boton">
               <option value="" selected disabled hidden>Directores</option>
+              <option value="none">Sin Filtro</option>
               <option value="Hayao Miyazaki">Hayao Miyasaki</option>
               <option value="Isao Takahata">Isao Takahata</option>
               <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
@@ -117,7 +119,7 @@
       <div class="container">
         <!-- Carrusel -->
 
-        <div id="allMovies"></div>
+        <div id="allMovies" class="all-movies"></div>
 
         <!-- carrusel -->
       </div>

@@ -2,20 +2,25 @@ import { mostViewed } from "./data.js";
 import { movies } from "./data.js";
 import { searchMovies } from "./data.js";
 import { searchMoviesByDirector } from "./data.js";
-
+import { sortByYear } from "./data.js";
 const gallery = document.getElementById("gallery");
+const allMovies = document.getElementById("allMovies");
+const searchInput = document.getElementById("search-input");
+const selectDirector = document.getElementById("directores");
+const filters = document.getElementById("filters")
+
 if (gallery) window.addEventListener("load", mostViewed);
 
-const allMovies = document.getElementById("allMovies");
 if (allMovies) window.addEventListener("load", movies);
 
-const searchInput = document.getElementById("search-input");
 if (searchInput) {
   searchInput.addEventListener("input", searchMovies);
 }
-const selectDirector = document.getElementById("directores");
 if (selectDirector) {
   selectDirector.addEventListener("change", searchMoviesByDirector);
 }
+
+filters.addEventListener("change", sortByYear)
+
 
 // showMovies();

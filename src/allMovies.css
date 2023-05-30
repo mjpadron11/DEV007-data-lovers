@@ -51,7 +51,7 @@ header {
   border-radius: 20px;
   background-color: rgb(9, 98, 98);
   position: relative;
-  z-index: 1000;
+  z-index: 1000; 
 }
 
 .search-input::placeholder {
@@ -105,3 +105,14 @@ object-position: center;
 position: relative;
 }
 */
+
+.all-movies{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.posters{
+  height: 200px;
+}

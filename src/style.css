@@ -257,6 +257,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  margin-left: 9rem;
 }
 
 .welcome-container {
@@ -312,7 +313,7 @@ h2 {
   position: relative;
 }
 
-.gallery__img {
+.gallery__img{
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -321,7 +322,7 @@ h2 {
   -webkit-transition-timing-function: ease;
 }
 
-.gallery__img:hover {
+.gallery__img:hover{
   transform: scale(1.2);
   box-shadow: 0 0 15px #66bbcaf7,
     /* inner white */ 0 0 20px rgba(11, 42, 85, 0.998),

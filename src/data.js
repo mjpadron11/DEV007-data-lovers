@@ -3,8 +3,7 @@ const allMovies = document.getElementById("allMovies");
 const gallery = document.getElementById("gallery");
 const text = document.getElementById("search-input");
 const idDirector = document.getElementById("directores");
-const select = document.getElementById("filters")
-
+const select = document.getElementById("filters");
 
 export const mostViewed = () => {
   const allPosters = data.films.filter((movies) => movies.most_viewed);
@@ -63,7 +62,7 @@ export const movies = () => {
 };
 
 const _forceRender = (valueToRender) => {
-  if (!valueToRender && valueToRender.length) return
+  if (!valueToRender && valueToRender.length) return;
 
   const imagesMovies = valueToRender.map((item) => {
     const img = document.createElement("img");
@@ -77,16 +76,16 @@ const _forceRender = (valueToRender) => {
 
   allMovies.innerHTML = "";
   imagesMovies.map((image) => allMovies.appendChild(image));
-}
+};
 
 export const searchMovies = () => {
-  if (!text && !text.value) return
+  if (!text && !text.value) return;
   const searchedMovies = data.films.filter((item) =>
     //se cambia el star with por includes(busca si está en el array y da un boolean)
     item.title.toLowerCase().includes(text.value.toLowerCase())
   );
 
-  _forceRender(searchedMovies)
+  _forceRender(searchedMovies);
 };
 
 export const searchMoviesByDirector = () => {
@@ -109,30 +108,29 @@ export const searchMoviesByDirector = () => {
   // allMovies.innerHTML = "";
   // imagesMovies.map((image) => allMovies.appendChild(image));
 
-  _forceRender(searchMoviesByDirector)
+  _forceRender(searchMoviesByDirector);
 };
 
-
 export const sortByYear = () => {
-  const value = select.options[select.selectedIndex].value
+  const value = select.options[select.selectedIndex].value;
 
-  const films = data.films
+  const films = data.films;
 
   if (value === "decendant") {
-    films.sort((a, b) => a.title.localeCompare(b.title))
+    films.sort((a, b) => a.title.localeCompare(b.title));
   }
 
   if (value === "ascendant") {
-    films.sort((a, b) => b.title.localeCompare(a.title))
+    films.sort((a, b) => b.title.localeCompare(a.title));
   }
 
   if (value === "year") {
-    films.sort((a, b) => Number(a.release_date) - Number(b.release_date))
+    films.sort((a, b) => Number(a.release_date) - Number(b.release_date));
   }
 
   if (value === "rt-score") {
-    films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score))
+    films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score));
   }
 
-  _forceRender(films)
-}
+  _forceRender(films);
+};

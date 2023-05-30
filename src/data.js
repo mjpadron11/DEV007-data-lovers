@@ -3,7 +3,7 @@ const allMovies = document.getElementById("allMovies");
 const gallery = document.getElementById("gallery");
 const text = document.getElementById("search-input").value;
 const idDirector = document.getElementById("directores");
-const filters = document.getElementById("filters")
+const select = document.getElementById("filters")
 
 
 export const mostViewed = () => {
@@ -109,7 +109,6 @@ export const searchMoviesByDirector = () => {
 
 
 export const sortByYear = () => {
-  const select = document.getElementById('filters')
   const value = select.options[select.selectedIndex].value
 
   const films = data.films
@@ -128,7 +127,6 @@ export const sortByYear = () => {
 
   if (value === "rt-score") {
     films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score))
-    console.log(films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score)))
   }
 
   _forceRender(films)

@@ -107,12 +107,13 @@ position: relative;
 */
 
 .all-movies{
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .posters{
-  height: 200px;
+  height: 250px;
+  width: 170px;
 }

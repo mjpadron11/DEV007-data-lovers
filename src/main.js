@@ -20,7 +20,7 @@ if (selectDirector) {
   selectDirector.addEventListener("change", searchMoviesByDirector);
 }
 
-filters.addEventListener("change", sortByYear)  
+filters.addEventListener("change", sortByYear)
 
 
 // showMovies();

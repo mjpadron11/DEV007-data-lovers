@@ -7,7 +7,7 @@ const gallery = document.getElementById("gallery");
 const allMovies = document.getElementById("allMovies");
 const searchInput = document.getElementById("search-input");
 const selectDirector = document.getElementById("directores");
-const filters = document.getElementById("filters")
+const filters = document.getElementById("filters");
 
 if (gallery) window.addEventListener("load", mostViewed);
 
@@ -20,7 +20,6 @@ if (selectDirector) {
   selectDirector.addEventListener("change", searchMoviesByDirector);
 }
 
-filters && filters.addEventListener("change", sortByYear)
-
+filters && filters.addEventListener("change", sortByYear);
 
 // showMovies();

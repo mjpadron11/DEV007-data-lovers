@@ -50,15 +50,12 @@ export const movies = () => {
   });
   imagesMovies.map((image) => allMovies.appendChild(image));
 
-
-    allMovies.querySelectorAll(".posters").forEach((pelicula) => {
-      pelicula.addEventListener('click', (e) => {
-        const movieObj = data.films.find(movie => movie.title === e.target.alt)
-        console.log(movieObj);
-      })
+  allMovies.querySelectorAll(".posters").forEach((pelicula) => {
+    pelicula.addEventListener("click", (e) => {
+      const movieObj = data.films.find((movie) => movie.title === e.target.alt);
+      console.log(movieObj);
     });
-
-
+  });
 };
 
 const _forceRender = (valueToRender) => {

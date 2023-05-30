@@ -127,47 +127,9 @@ export const sortByYear = () => {
   }
 
   if (value === "rt-score") {
-    films.sort((a, b) => Number(a.rt_score) - Number(b.rt_score))
+    films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score))
+    console.log(films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score)))
   }
 
   _forceRender(films)
 }
-
-// export const orderMovies = () => {
-//   let title = document.getElementById("allMovies").value;
-
-//   let orderdMovies = data.films.sort((item) =>
-//     item.title.toLowerCase().sort(text.toLowerCase())
-//   );
-//   const imagesMovies = title.map((item) => {
-//     const img = document.createElement("img");
-//     img.classList.add("posters");
-//     img.src = item.poster;
-//     img.width = 100;
-//     img.heigth = 100;
-//     //return finaliza el callback
-//     return img;
-//   });
-//   allMovies.innerHTML = "";
-//   imagesMovies.map((image) => allMovies.appendChild(image));
-// };
-
-// for (let i = 0; i <= images.length ; i++) {
-//   allMovies.appendChild(images[i])
-// }
-
-// export const showMovies = () => {
-//   data.forEach(movie => {
-//     const movieDiv = document.createElement("div");
-//     const movieTitle = document.createElement("h2");
-//     const movieImage = document.createElement("img");
-
-//     movieTitle.textContent = movie.title;
-//     movieImage.src = movie.poster;
-
-//     movieDiv.appendChild(movieTitle);
-//     movieDiv.appendChild(movieImage);
-
-//     allMovies.appendChild(movieDiv)
-//   })
-// }

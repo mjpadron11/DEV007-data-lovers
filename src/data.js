@@ -1,7 +1,7 @@
 import data from "./data/ghibli/ghibli.js";
 const allMovies = document.getElementById("allMovies");
 const gallery = document.getElementById("gallery");
-const text = document.getElementById("search-input").value;
+const text = document.getElementById("search-input");
 const idDirector = document.getElementById("directores");
 const select = document.getElementById("filters")
 
@@ -9,23 +9,28 @@ const select = document.getElementById("filters")
 export const mostViewed = () => {
   const allPosters = data.films.filter((movies) => movies.most_viewed);
 
-  const images = allPosters.map((item) => {
-    const img = document.createElement("img");
+  const images = allPosters.map(({ poster, title, description }) => {
+    // creating container
     const div = document.createElement("div");
-    const p = document.createElement("p");
     div.classList.add("gallery__img-container");
-    img.classList.add("gallery__img");
-    p.classList.add("gallery__title");
-    img.src = item.poster;
-    img.alt = item.title;
-    p.textContent = item.description;
 
+    // creating img
+    const img = document.createElement("img");
+    img.classList.add("gallery__img");
+    img.src = poster;
+    img.alt = title;
     div.appendChild(img);
+
+    // creating title
+    const p = document.createElement("p");
+    p.classList.add("gallery__title");
+    p.textContent = description;
     div.appendChild(p);
+
     return div;
   });
 
-  for (let i = 0; i <= images.length; i++) {
+  for (let i = 0; i < images.length; i++) {
     gallery.appendChild(images[i]);
   }
 };
@@ -47,28 +52,8 @@ export const movies = () => {
   imagesMovies.map((image) => allMovies.appendChild(image));
 };
 
-export const searchMovies = () => {
-  const searchedMovies = data.films.filter((item) =>
-    //se cambia el star with por includes(busca si está en el array y da un boolean)
-    item.title.toLowerCase().includes(text.toLowerCase())
-  );
-
-  const imagesMovies = searchedMovies.map((item) => {
-    const img = document.createElement("img");
-    img.classList.add("posters");
-    img.src = item.poster;
-    img.alt = item.title;
-    img.width = 100;
-    img.heigth = 100;
-    //return finaliza el callback
-    return img;
-  });
-  allMovies.innerHTML = "";
-  imagesMovies.map((image) => allMovies.appendChild(image));
-};
-
 const _forceRender = (valueToRender) => {
-  if (!valueToRender) return
+  if (!valueToRender && valueToRender.length) return
 
   const imagesMovies = valueToRender.map((item) => {
     const img = document.createElement("img");
@@ -83,6 +68,16 @@ const _forceRender = (valueToRender) => {
   allMovies.innerHTML = "";
   imagesMovies.map((image) => allMovies.appendChild(image));
 }
+
+export const searchMovies = () => {
+  if (!text && !text.value) return
+  const searchedMovies = data.films.filter((item) =>
+    //se cambia el star with por includes(busca si está en el array y da un boolean)
+    item.title.toLowerCase().includes(text.value.toLowerCase())
+  );
+
+  _forceRender(searchedMovies)
+};
 
 export const searchMoviesByDirector = () => {
   const selectedDirector = idDirector.options[idDirector.selectedIndex].value;

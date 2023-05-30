@@ -55,7 +55,7 @@ export const movies = () => {
     allMovies.querySelectorAll(".posters").forEach((pelicula) => {
       pelicula.addEventListener('click', (e) => {
         const movieObj = data.films.find(movie => movie.title === e.target.alt)
-        console.log(movieObj)
+        console.log(movieObj);
       })
     });
 

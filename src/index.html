@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>El mundo de Ghibli</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
@@ -20,54 +21,28 @@
       </div>
     </header>
     <!-- Data de Ghibli -->
-    <script src="main.js" type="module"></script>
-    <script src="data.js" type="module"></script>
-    <!-- Imagen de fondo -->
-    <picture>
-      <img
-        class="background-image"
-        src="Images/Slice.png"
-        alt="background-image"
-      />
-    </picture>
-    <!-- Gradiente de fondo -->
-    <picture>
-      <img
-        class="background-gradient"
-        src="Images/dark-background.png"
-        alt="background-gradient"
-      />
-    </picture>
-    <!-- Barra lateral con íconos -->
-    <aside class="sidemenu">
-      <nav>
-        <ul>
-          <a href="allMovies.html">
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoTotoro.png" class="icon" />
-              </picture>
-              <li>Película</li>
-            </div>
-          </a>
-          <a>
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoCalcifer.png" class="icon" />
-              </picture>
-            </div>
-            <li>Noticias</li>
-          </a>
-          <a>
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoSinCara.png" class="icon" />
-              </picture>
-            </div>
-            <li>Personajes</li>
-          </a>
-        </ul>
-      </nav>
+
+    <aside class="aside">
+      <ul>
+        <a href="allMovies.html">
+            <picture class="icon-container">
+              <img src="Images\iconoTotoro.png" class="icon" />
+            </picture>
+          <li>Película</li>
+        </a>
+        <a>
+            <picture class="icon-container">
+              <img src="Images\iconoCalcifer.png" class="icon" />
+            </picture>
+          <li>Noticias</li>
+        </a>
+        <a>
+            <picture class="icon-container">
+              <img src="Images\iconoSinCara.png" class="icon" />
+            </picture>
+          <li>Director</li>
+        </a>
+      </ul>
     </aside>
     <main>
       <!--Título-->
@@ -107,18 +82,21 @@
           src="./Images/contactF.png"
           a
           href="https://www.facebook.com/groups/StudioGhibliJP"
+          alt="Facebook contact"
         />
         <img
           class="social"
           src="./Images/contactT.png"
           a
           href="https://twitter.com/JP_GHIBLI/"
+          alt="Twitter contact"
         />
         <img
           class="social"
           src="./Images/contactY.png"
           a
           href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY"
+          alt="Youtube contact"
         />
       </div>
       <div class="contact">
@@ -126,5 +104,7 @@
         *Esta página se sigue actualizando
       </div>
     </footer>
+    <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
   </body>
 </html>

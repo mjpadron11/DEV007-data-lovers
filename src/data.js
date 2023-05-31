@@ -51,12 +51,12 @@ export const movies = () => {
   imagesMovies.map((image) => allMovies.appendChild(image));
 
 
-    allMovies.querySelectorAll(".posters").forEach((pelicula) => {
-      pelicula.addEventListener('click', (e) => {
-        const movieObj = data.films.find(movie => movie.title === e.target.alt)
-        console.log(movieObj);
-      })
-    });
+  allMovies.querySelectorAll(".posters").forEach((pelicula) => {
+    pelicula.addEventListener('click', (e) => {
+      const movieObj = data.films.find(movie => movie.title === e.target.alt)
+      console.log(movieObj);
+    })
+  });
 
 
 };
@@ -124,8 +124,13 @@ export const sortByYear = () => {
     films.sort((a, b) => b.title.localeCompare(a.title));
   }
 
+  // if (value === "year") {
+  //   films.sort((a, b) => Number(a.release_date) - Number(b.release_date));
+  //   console.log(Number(a.release_date) - Number(b.release_date))
+  // }
+
   if (value === "year") {
-    films.sort((a, b) => Number(a.release_date) - Number(b.release_date));
+    films.sort((a, b) => (a.release_date).localeCompare(b.release_date));
   }
 
   if (value === "rt-score") {

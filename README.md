@@ -54,10 +54,45 @@ Cabe destacar que todo esto se basó en un backlog de usuario por lo que el prim
 
 Una vez recolectadas las respuestas del formulario, se procedió a establecer las principales historias de usuario del proyecto las cuales fueron:
 
-1.
-2.
-3.
-4.
+1. Creación de la página y definicón de estilos:
+   Se consultó a los usuarios la necesidad de tener una página con las características mencionadas anteriormente y se pidieron sugerencias de funcionalidad y datos que se creyeran útil.
+
+![](https://i.postimg.cc/FRZKjbp8/Funcionalidades.jpg)
+
+> Respuestas asociadas a la información que el usuario gustaría ver en la página.
+
+Luego de esto se comenzó a dar estructura al proyecto a través del archivo HTML y estilos a través del archivo CSS.
+Los usuarios tuvieron oportunidad de ver la base y sugirieron cambiar algunas tonalidades de la paleta de colores para que sea más agradable a la vista .
+
+2. Despliegue de las películas más conocidas en el menú de inicio.
+
+Se consultó a través del formulario cuál era la primera película en la que pensaban al mencionar los estudios Ghibli .
+Las respuestas recopiladas se utilizaron para posteriormente filtrar la data y desplegar la imagen del Poster promocional de las 5 películas más nombradas junto a su descripción.
+
+Las películas más mencionadas fueron:
+
+- Mi vecino Totoro (My neighbord Totoro)
+- La Princesa Mononoke (Princess Mononoke)
+- El Viaje de Chihiro (Spirited away)
+- El castilo ambulante (Howl´s Moving castle)
+- Ponyo la sirenita (Ponyo on the cliff by the sea)
+
+![](https://i.postimg.cc/FRg4M9JL/Grafico-Peliculas.jpg)
+
+> Resultado de las películas más nombradas en el formulario
+
+3. Despliegue de todas las películas
+
+Debido a que los usuarios solicitaron poder averiguar la información general de cada una de las películas, se generó un menú en que se despliegue el poster de cada una de las películas del estudio Ghibli. Para hace más fácil la elección de la película a investigar, se decidió crear un botón de búsqueda por carácteres, uno para filtar las películas por cada uno de los directores del estudio y un botón para ordenar la data en orden alfabético, cronológicamente y según la puntuación recibida por la plataforma Rotten tomatoes.
+
+4. Despliegue individual de cada película
+
+Se creó un menú de despliegue de todas las películas para que el usuario pueda conocer la información general de cada una.
+Considerando que una de las opciones más votadas al momento de sugerir funcionalidad fue la de información general, se despliega una ventana modal en la que el usuario puede ver el título, reseña, año de lanzamiento , director y productor de cada película junto con tarjetas de los principales personajes de cada una de las películas.
+
+5. ¿Dónde puedo ver las películas del estudio Ghibli?
+
+Para que el usuario tenga la información de las plataformas en las que pueden ver las películas se agregó las redes sociales del estudio Ghibli al pie de página y, además, se agregó alguna información en la sección de noticias.
 
 ##### Prototipos
 
@@ -90,12 +125,3 @@ Una vez realizado el prototipo de baja fidelidad se comenzar a realizar su contr
 > Bosquejo de prototipo de alta fidelidad realizado en Figma
 
 #### Ejecución
-
-<!--
-## 6. Hacker edition
-
-## 7. Consideraciones técnicas
-
-## 8. Pistas, tips y lecturas complementarias
-
-## 9. Checklist -->

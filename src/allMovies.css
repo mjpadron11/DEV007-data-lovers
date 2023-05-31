@@ -1,36 +1,41 @@
 header {
   display: flex;
-  background-color: rgb(5, 124, 124);
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 90px;
-  /* position: fixed; */
   z-index: 1000;
 }
 
 .boton {
   padding: 0.5rem 1.5rem;
-  text-align: center;
   color: white;
+  font-size: 18px;
   background-color: rgb(9, 98, 98);
-
-  border: 2px solid black;
-  border-radius: 8px;
+  border-radius: 16px;
+  border: 2px solid rgb(94, 148, 148);
   cursor: pointer;
   height: fit-content;
+  text-align: left;
 }
 
-.home {
-  margin-top: 2rem;
-  transform: translateX(20%);
-  height: 30px;
-  /* position: fixed; */
+.home-button > img{
+  width: 70px;
 }
 
-.search {
-  margin-top: 10px;
-  transform: translateX(435%);
-  height: 30px;
-  /* position: fixed; */
+.filters{
+  display: flex;
+  gap: 1rem;
+}
+
+option{
+  text-align: left;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .search-input {
@@ -41,8 +46,8 @@ header {
   opacity: 0;
   transition: all 0.5s ease;
   border-radius: 20px;
+  border: 2px solid rgb(94, 148, 148);
   background-color: rgb(9, 98, 98);
-  /* position: relative; */
   z-index: 1000;
 }
 
@@ -60,12 +65,10 @@ header {
   opacity: 1;
 }
 
-.icon-container {
-  width: 50px;
-}
+
 
 .search-icon {
-  width: 100%;
+  height: 100%;
 }
 
 .all-movies-wrapper {
@@ -78,7 +81,7 @@ header {
   padding: 1rem;
   width: 100%;
   max-width: 1200px;
-  gap: 1rem;
+  gap: 1.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -86,4 +89,17 @@ header {
 .posters {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+
+.posters:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #66bbcaf7,
+    /* inner white */ 0 0 20px rgba(11, 42, 85, 0.998),
+    /* middle blue */ 0 0 100px rgb(14, 120, 120); /* outer cyan */
+  filter: brightness(0.4);
+}
+.social{
+  margin: 0;
 }

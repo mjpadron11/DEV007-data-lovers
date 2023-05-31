@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>El mundo de Ghibli</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="allMovies.css" />
@@ -11,32 +12,31 @@
 <body>
   <header>
     <div class="barTop">
-      <a class="boton" href="index.html">Inicio 🏠</a>
-
-      <div class="botonDeLaAZ">
-        <!-- botón desplegable de la A-Z-->
-        <select id="filters" class="boton">
-          <option value="" selected disabled hidden>Orden</option>
-          <option value="ascendant">A-Z</option>
-          <option value="decendant">Z-A</option>
-          <option value="year">Año</option>
-          <option value="rt-score">RT Score</option>
-        </select>
-      </div>
-
-      <div class="director">
-        <!-- botón desplegable de directores-->
-        <!-- <label for="">directores</label> -->
-        <select id="directores" class="boton">
-          <option value="" selected disabled hidden>Directores</option>
-          <option value="none">Sin Filtro</option>
-          <option value="Hayao Miyazaki">Hayao Miyasaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-        </select>
+      <div class="filters">
+        <div class="botonDeLaAZ">
+          <!-- botón desplegable de la A-Z-->
+          <select id="filters" class="boton">
+            <option value="" selected disabled hidden>Orden</option>
+            <option value="ascendant">A-Z</option>
+            <option value="decendant">Z-A</option>
+            <option value="year">Año</option>
+            <option value="rt-score">RT Score</option>
+          </select>
+        </div>
+        <div class="director">
+          <!-- botón desplegable de directores-->
+          <!-- <label for="">directores</label> -->
+          <select id="directores" class="boton">
+            <option value="" selected disabled hidden>Directores</option>
+            <option value="none">Sin Filtro</option>
+            <option value="Hayao Miyazaki">Hayao Miyasaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          </select>
+        </div>
       </div>
       <div class="audio-wrapper">
         <audio controls>
@@ -44,12 +44,13 @@
           Tu navegador no soporta la etiqueta audio.
         </audio>
       </div>
+      <div class="search-bar">
+        <input class="search-input" type="text" id="search-input" placeholder="Buscar" />
 
-      <input class="boton" type="text" id="search-input" placeholder="Buscar" />
-
-      <picture class="icon-container"><!-- icono de buscar -->
-        <img class="search-icon" src="Images/iconoBusqueda.png" />
-      </picture>
+        <picture class="icon-container"><!-- icono de buscar -->
+          <img class="search-icon" src="Images/iconoBusqueda.png" />
+        </picture>
+      </div>
     </div>
     </div>
   </header>
@@ -57,6 +58,12 @@
 
   <aside class="aside">
     <ul>
+      <a class="home-button" href="index.html">
+        <picture class="icon-container">
+          <img class="icon" src="/Images/home_button.png" alt="Home button">
+        </picture>
+        <li>Inicio</li>
+      </a>
       <a href="allMovies.html">
         <div>
           <picture class="icon-container">
@@ -65,7 +72,7 @@
         </div>
         <li>Película</li>
       </a>
-      <a>
+      <a href="noticias.html">
         <div>
           <picture class="icon-container">
             <img src="Images\iconoCalcifer.png" class="icon" />
@@ -79,7 +86,7 @@
             <img src="Images\iconoSinCara.png" class="icon" />
           </picture>
         </div>
-        <li>Director</li>
+        <li>Personajes</li>
       </a>
     </ul>
   </aside>
@@ -94,24 +101,15 @@
   </body>
   <footer>
     <div class="contactSocial">
-      <img
-        class="social"
-        src="./Images/contactF.png"
-        a
-        href="https://www.facebook.com/groups/StudioGhibliJP"
-      />
-      <img
-        class="social"
-        src="./Images/contactT.png"
-        a
-        href="https://twitter.com/JP_GHIBLI/"
-      />
-      <img
-        class="social"
-        src="./Images/contactY.png"
-        a
-        href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY"
-      />
+      <a href="https://www.facebook.com/groups/StudioGhibliJP">
+        <img src="./Images/contactF.png" class="social"/>
+      </a>
+      <a href="https://twitter.com/JP_GHIBLI/">
+        <img class="social" src="./Images/contactT.png"/>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY">
+        <img class="social" src="./Images/contactY.png"/>
+      </a>
     </div>
     <div class="contact">
       <p>@DataLovers20</p>

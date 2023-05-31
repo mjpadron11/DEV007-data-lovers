@@ -2,123 +2,85 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>El mundo de Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="allMovies.css" />
+    <link rel="stylesheet" href="noticias.css">
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
-    <header>
-      <div class="barTop">
-        <!-- Barra superior -->
-        <div class="audio-wrapper">
-          <!-- Barra de audio -->
-          <audio controls>
-            <source src="audio/Merry-go-round.mp3" type="audio/mpeg" />
-            Tu navegador no soport la etiqueta audio.
-          </audio>
+<body>
+  <aside class="aside">
+    <ul>
+      <a class="home-button" href="index.html">
+        <picture class="icon-container">
+          <img class="icon" src="/Images/home_button.png" alt="Home button">
+        </picture>
+        <li>Inicio</li>
+      </a>
+      <a href="allMovies.html">
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoTotoro.png" class="icon" />
+          </picture>
         </div>
-      </div>
-    </header>
-    <!-- Data de Ghibli -->
-    <script src="main.js" type="module"></script>
-    <script src="data.js" type="module"></script>
-    <!-- Imagen de fondo -->
-    <picture>
-      <img
-        class="background-image"
-        src="Images/Slice.png"
-        alt="background-image"
-      />
+        <li>Película</li>
+      </a>
+      <a>
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoCalcifer.png" class="icon" />
+          </picture>
+        </div>
+        <li>Noticias</li>
+      </a>
+      <a>
+        <div>
+          <picture class="icon-container">
+            <img src="Images\iconoSinCara.png" class="icon" />
+          </picture>
+        </div>
+        <li>Personajes</li>
+      </a>
+    </ul>
+  </aside>
     </picture>
-    <!-- Gradiente de fondo -->
-    <picture>
-      <img
-        class="background-gradient"
-        src="Images/dark-background.png"
-        alt="background-gradient"
-      />
-    </picture>
-    <!-- Barra lateral con íconos -->
-    <aside class="sidemenu">
-      <nav>
-        <ul>
-          <a href="index.html">
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoCalcifer.png" class="icon" />
-              </picture>
-            </div>
-            <li>Inicio</li>
-          </a>
-          <a href="noticias.html">
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoSinCara.png" class="icon" />
-              </picture>
-            </div>
-            <li>Noticias</li>
-          </a>
-          <a href="allMovies.html">
-            <div>
-              <picture class="icon-container">
-                <img src="Images\iconoTotoro.png" class="icon" />
-              </picture>
-              <li>Películas</li>
-            </div>
-          </a>
-        </ul>
-      </nav>
-    </aside>
     <main>
-      <!--Título-->
-      <div class="containerNews">
-        <div class="welcome-container">
-          <div class="welcome-text">
-            <!-- <h1>Noticias</h1> -->
-            <h2>
-              ¡Es una realidad! <br />Las películas del estudio Ghibli llegaron
-              a Netflix
-            </h2>
-            <p>
-              Nos complace anunciar que amantes del animé pueden dormir desde el
-              01 de Febrero ya que todas las películas del estudio Ghibli
-              llegaron a la plataforma de Streaming más utlizada en el mundo.
-              <br />
-              Si bien se han ido liberando de a poco, actualmente están todas
-              disponibles para verlas en su idioma original y dobladas.
-
-              <br />
-              <img src="Images\noticia.jpg" />
-            </p>
-          </div>
+      <div class="news-container">
+        <div class="news-welcome-text">
+          <h2> ¡Es una realidad!</h2>
+          <h2>Las películas del estudio Ghibli llegaron</h2>
+          <p>Nos complace anunciar que amantes del animé pueden dormir desde el
+            01 de Febrero ya que todas las películas del estudio Ghibli
+            llegaron a la plataforma de Streaming más utlizada en el mundo.</p>
+          <p>Si bien se han ido liberando de a poco, actualmente están todas
+            disponibles para verlas en su idioma original y dobladas.</p>
         </div>
+        <img src="Images\noticia.jpg" />
       </div>
     </main>
-    <footer>
-      <div class="contactSocial">
-        <img
-          class="social"
-          src="./Images/contactF.png"
-          a
-          href="https://www.facebook.com/groups/StudioGhibliJP"
-        />
-        <img
-          class="social"
-          src="./Images/contactT.png"
-          a
-          href="https://twitter.com/JP_GHIBLI/"
-        />
-        <img
-          class="social"
-          src="./Images/contactY.png"
-          a
-          href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY"
-        />
-      </div>
-      <div class="contact">
-        <p>@DataLovers20</p>
-        *Esta página se sigue actualizando
-      </div>
-    </footer>
   </body>
+  <footer>
+    <div class="contactSocial">
+      <a href="https://www.facebook.com/groups/StudioGhibliJP">
+        <img src="./Images/contactF.png" class="social"/>
+      </a>
+      <a href="https://twitter.com/JP_GHIBLI/">
+        <img class="social" src="./Images/contactT.png"/>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY">
+        <img class="social" src="./Images/contactY.png"/>
+      </a>
+    </div>
+    <div class="contact">
+      <p>@DataLovers20</p>
+      <p>*Esta página se sigue actualizando</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+  <script src="data.js" type="module"></script>
+</body>
+
 </html>

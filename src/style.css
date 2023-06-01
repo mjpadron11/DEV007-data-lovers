@@ -120,7 +120,6 @@ ul {
 ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
   height: 100%;
@@ -176,7 +175,6 @@ a {
   display: flex;
   flex-direction: column;
   text-align: left;
-  flex-direction: center;
   gap: 1rem;
   max-width: 1200px;
   line-height: 1.5;
@@ -207,7 +205,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  width: 110%;
+  width: 100%;
 }
 
 .gallery__img-container {
@@ -228,11 +226,8 @@ h2 {
 .gallery__img:hover {
   transform: scale(1.2);
   box-shadow: 0 0 15px #66bbcaf7,
-    /* inner white */
     0 0 20px rgba(11, 42, 85, 0.998),
-    /* middle blue */
     0 0 100px rgb(14, 120, 120);
-  /* outer cyan */
   filter: brightness(0.4);
 }
 
@@ -259,24 +254,21 @@ h2 {
 footer {
   z-index: 100;
   flex-direction: column;
-  /* transform: translateY(-250%); */
   display: flex;
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: 4rem 0;
   align-self: flex-end;
 }
 
 .social {
   height: 60px;
-  margin: 30px;
 }
 
 .contactSocial {
   display: flex;
   justify-content: center;
-  transition: 0, 5s;
   object-fit: cover;
   gap: 3rem;
   padding: 1rem 0
@@ -390,4 +382,109 @@ ul>a {
 .posters {
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 390px){
+
+  body{
+    font-size: 15px;
+  }
+
+  audio{
+    display: none;
+  }
+  .aside{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgb(5, 124, 124);
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent ;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .icon-container{
+    display: none;
+  }
+
+  main{
+    width: 100%;
+    padding: 6rem 0 0 0;
+  }
+
+
+  .container{
+    max-width: 500px;
+    gap: 4rem;
+  }
+
+  .welcome-container{
+    box-sizing: content-box;
+    flex-direction: column-reverse;
+    max-width: 470px;
+    padding: 2rem 1rem;
+    gap: 15rem;
+    margin: 1rem;
+  }
+
+  .loge{
+    width: 100%;
+  }
+
+  .welcome-text{
+    box-sizing: content-box;
+  }
+
+  h2{
+    margin: 1rem;
+    text-align: center;
+  }
+
+  #gallery{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 4rem 0;
+    margin: 0;
+  }
+
+  .gallery__img-container{
+    width: 70%;
+  }
+
+  .gallery__img{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+    background-color: rgba(5, 124, 124, 0.51);
+  }
+
+  .contactSocial{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contactSocial > a {
+    align-items: center;
+  }
+
+  .social{
+    width: 100%;
+  }
 }

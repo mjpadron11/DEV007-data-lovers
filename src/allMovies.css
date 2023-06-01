@@ -103,3 +103,19 @@ option{
 .social{
   margin: 0;
 }
+
+@media only screen and (max-width: 390px){
+  .container{
+    box-sizing: border-box;
+  }
+
+  .all-movies{
+    box-sizing: border-box;
+  }
+
+  .all-movies{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+}

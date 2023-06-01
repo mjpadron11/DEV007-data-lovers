@@ -9,116 +9,128 @@
     <link rel="icon" type="image/jpg" href="/Images/favicon.png" />
   </head>
   <body>
-<body>
-  <header>
-    <div class="barTop">
-      <div class="filters">
-        <div class="botonDeLaAZ">
-          <!-- botón desplegable de la A-Z-->
-          <select id="filters" class="boton">
-            <option value="" selected disabled hidden>Orden</option>
-            <option value="ascendant">A-Z</option>
-            <option value="decendant">Z-A</option>
-            <option value="year">Año</option>
-            <option value="rt-score">RT Score</option>
-          </select>
-        </div>
-        <div class="director">
-          <!-- botón desplegable de directores-->
-          <!-- <label for="">directores</label> -->
-          <select id="directores" class="boton">
-            <option value="" selected disabled hidden>Directores</option>
-            <option value="none">Sin Filtro</option>
-            <option value="Hayao Miyazaki">Hayao Miyasaki</option>
-            <option value="Isao Takahata">Isao Takahata</option>
-            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          </select>
-        </div>
-      </div>
-      <div class="audio-wrapper">
-        <audio controls>
-          <source src="audio/Merry-go-round.mp3" type="audio/mpeg" />
-          Tu navegador no soporta la etiqueta audio.
-        </audio>
-      </div>
-      <div class="search-bar">
-        <input class="search-input" type="text" id="search-input" placeholder="Buscar" />
+    <body>
+      <header>
+        <div class="barTop">
+          <div class="filters">
+            <div class="botonDeLaAZ">
+              <!-- botón desplegable de la A-Z-->
+              <select id="filters" class="boton">
+                <option value="" selected disabled hidden>Orden</option>
+                <option value="ascendant">A-Z</option>
+                <option value="decendant">Z-A</option>
+                <option value="year">Año</option>
+                <option value="rt-score">RT Score</option>
+              </select>
+            </div>
+            <div class="director">
+              <!-- botón desplegable de directores-->
+              <!-- <label for="">directores</label> -->
+              <select id="directores" class="boton">
+                <option value="" selected disabled hidden>Directores</option>
+                <option value="none">Sin Filtro</option>
+                <option value="Hayao Miyazaki">Hayao Miyasaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiromasa Yonebayashi">
+                  Hiromasa Yonebayashi
+                </option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+              </select>
+            </div>
+          </div>
+          <div class="audio-wrapper">
+            <audio controls>
+              <source src="audio/Merry-go-round.mp3" type="audio/mpeg" />
+              Tu navegador no soporta la etiqueta audio.
+            </audio>
+          </div>
+          <div class="search-bar">
+            <input
+              class="search-input"
+              type="text"
+              id="search-input"
+              placeholder="Buscar"
+            />
 
-        <picture class="icon-container"><!-- icono de buscar -->
-          <img class="search-icon" src="Images/iconoBusqueda.png" />
-        </picture>
-      </div>
-    </div>
-    </div>
-  </header>
-  <!-- Data de Ghibli -->
+            <picture class="icon-container"
+              ><!-- icono de buscar -->
+              <img class="search-icon" src="Images/iconoBusqueda.png" />
+            </picture>
+          </div>
+        </div>
+      </header>
+      <!-- Data de Ghibli -->
 
-  <aside class="aside">
-    <ul>
-      <a class="home-button" href="index.html">
-        <picture class="icon-container">
-          <img class="icon" src="/Images/home_button.png" alt="Home button">
-        </picture>
-        <li>Inicio</li>
-      </a>
-      <a href="allMovies.html">
-        <div>
-          <picture class="icon-container">
-            <img src="Images\iconoTotoro.png" class="icon" />
-          </picture>
+      <aside class="aside">
+        <ul>
+          <a class="home-button" href="index.html">
+            <picture class="icon-container">
+              <img
+                class="icon"
+                src="/Images/home_button.png"
+                alt="Home button"
+              />
+            </picture>
+            <li>Inicio</li>
+          </a>
+          <a href="allMovies.html">
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoTotoro.png" class="icon" />
+              </picture>
+            </div>
+            <li>Película</li>
+          </a>
+          <a href="noticias.html">
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoCalcifer.png" class="icon" />
+              </picture>
+            </div>
+            <li>Noticias</li>
+          </a>
+          <a>
+            <div>
+              <picture class="icon-container">
+                <img src="Images\iconoSinCara.png" class="icon" />
+              </picture>
+            </div>
+            <li>Personajes</li>
+          </a>
+        </ul>
+      </aside>
+
+      <main>
+        <div class="container">
+          <!-- Películas -->
+          <div id="allMovies" class="all-movies"></div>
+          <!-- Películas -->
         </div>
-        <li>Película</li>
-      </a>
-      <a href="noticias.html">
-        <div>
-          <picture class="icon-container">
-            <img src="Images\iconoCalcifer.png" class="icon" />
-          </picture>
-        </div>
-        <li>Noticias</li>
-      </a>
-      <a>
-        <div>
-          <picture class="icon-container">
-            <img src="Images\iconoSinCara.png" class="icon" />
-          </picture>
-        </div>
-        <li>Personajes</li>
-      </a>
-    </ul>
-  </aside>
-    </picture>
-    <main>
-      <div class="container">
-        <!-- Películas -->
-        <div id="allMovies" class="all-movies"></div>
-        <!-- Películas -->
+      </main>
+    </body>
+    <footer>
+      <div class="contactSocial">
+        <a href="https://www.facebook.com/groups/StudioGhibliJP">
+          <img src="./Images/contactF.png" class="social" />
+        </a>
+        <a href="https://twitter.com/JP_GHIBLI/">
+          <img class="social" src="./Images/contactT.png" />
+        </a>
+        <a
+          href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY"
+        >
+          <img class="social" src="./Images/contactY.png" />
+        </a>
       </div>
-    </main>
+      <div class="contact">
+        <p>@DataLovers20</p>
+        <p>*Esta página se sigue actualizando</p>
+      </div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
   </body>
-  <footer>
-    <div class="contactSocial">
-      <a href="https://www.facebook.com/groups/StudioGhibliJP">
-        <img src="./Images/contactF.png" class="social"/>
-      </a>
-      <a href="https://twitter.com/JP_GHIBLI/">
-        <img class="social" src="./Images/contactT.png"/>
-      </a>
-      <a href="https://www.youtube.com/playlist?list=PLVfHJfXFDXRisXKXlgcRwL0_WBaZ4cPnY">
-        <img class="social" src="./Images/contactY.png"/>
-      </a>
-    </div>
-    <div class="contact">
-      <p>@DataLovers20</p>
-      <p>*Esta página se sigue actualizando</p>
-    </div>
-  </footer>
-
-  <script src="main.js" type="module"></script>
-  <script src="data.js" type="module"></script>
-</body>
-
 </html>

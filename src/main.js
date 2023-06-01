@@ -21,5 +21,3 @@ if (selectDirector) {
 }
 
 filters && filters.addEventListener("change", sortByYear);
-
-// showMovies();

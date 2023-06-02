@@ -32,7 +32,7 @@ export const searchMoviesByDirector = (selectedDirector) => {
 export const searchMovies = (text) => {
   if (!text || !text.value) return;
   const searchedMovies = data.films.filter((item) =>
-    item.title.toLowerCase().includes(text.value.toLowerCase())
+    item.title.toLowerCase().includes(text.toLowerCase())
   );
   return searchedMovies
 };

@@ -104,18 +104,99 @@ option{
   margin: 0;
 }
 
+.hamburguerbtn{
+  display: none;
+  cursor: pointer;
+
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all .3s ease;
+  background-color: white;
+  border-radius: 20px;
+}
+
 @media only screen and (max-width: 390px){
-  .container{
-    box-sizing: border-box;
+
+  header{
+    padding: 5rem 0;
   }
 
-  .all-movies{
+  .barTop{
+    flex-direction: column;
+    padding: 1rem;
+    gap: .5rem;
+  }
+
+  .botonDeLaAZ, .boton, .director, .directores, .search-bar{
+    width: 100%;
+  }
+
+  .search-input{
+    opacity: 1;
+    width: 100%;
+  }
+
+  .aside{
+    display: none;
+  }
+
+  .container{
     box-sizing: border-box;
   }
 
   .all-movies{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     padding: 3rem;
   }
+
+  .hamburguerbtn{
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .hamburguerbtn.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburguerbtn.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+ }
+
+ .hamburguerbtn.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.aside.active{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* transition: .3s; */
+  
+}
+
+li{
+  margin: 16px 0;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+}
+
 }

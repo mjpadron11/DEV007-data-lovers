@@ -1,8 +1,9 @@
 import data from "./data/ghibli/ghibli.js";
+
 const allMovies = document.getElementById("allMovies");
 const gallery = document.getElementById("gallery");
 
-
+//Se llaman películas más vistas al inicio
 export const mostViewed = () => {
   const allPosters = data.films.filter((movies) => movies.most_viewed);
 
@@ -31,13 +32,11 @@ export const mostViewed = () => {
     gallery.appendChild(images[i]);
   }
 };
-
+//Se llaman todas las películas en menú películas
 export const movies = () => {
   //esto deja un array de string por lo que se crea una etiqueta imagen para poder insertar el poster
   const imagesMovies = data.films.map((item) => {
     const img = document.createElement("img");
-    // const div = document.createElement("div");
-    // div.classList.add("posters-container");
     img.classList.add("posters");
     img.src = item.poster;
     img.alt = item.title;
@@ -48,15 +47,12 @@ export const movies = () => {
   });
   imagesMovies.map((image) => allMovies.appendChild(image));
 
-
   allMovies.querySelectorAll(".posters").forEach((pelicula) => {
-    pelicula.addEventListener('click', (e) => {
-      const movieObj = data.films.find(movie => movie.title === e.target.alt)
+    pelicula.addEventListener("click", (e) => {
+      const movieObj = data.films.find((movie) => movie.title === e.target.alt);
       console.log(movieObj);
-    })
+    });
   });
-
-
 };
 
 // export const searchMovies = () => {
@@ -67,7 +63,3 @@ export const movies = () => {
 //   );
 //   return searchedMovies
 // };
-
-
-
-

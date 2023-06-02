@@ -5,12 +5,7 @@
 - [1. Preámbulo](#1-preámbulo)
 - [2. Resumen del proyecto](#2-resumen-del-proyecto)
 - [3. Metodología de trabajo](#3-metodología-de-trabajo)
-<!-- - [4. Historias de Usuario](#4-historias-de-usuario)
-- [5. Ejecución](#5-ejecución) -->
-<!-- * [6. Hacker edition](#6-hacker-edition)
-- [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-- [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-- [9. Checklist](#9-checklist) -->
+- [4. Actualización ](#4-actualización)
 
 ---
 
@@ -118,10 +113,22 @@ Una vez realizado el prototipo de baja fidelidad se comenzar a realizar su contr
 
 ![](https://i.postimg.cc/nXyxhQ0H/AF2.jpg)
 
-![](https://i.postimg.cc/mzRGQfvJ/AF3.jpg)
-
-![](https://i.postimg.cc/7CSkGYWS/AF4.jpg)
-
 > Bosquejo de prototipo de alta fidelidad realizado en Figma
 
 #### Ejecución
+
+##### Funcionalidad
+
+Las principales funcionalidades asociadas al proyecto fueron las de orden y filtro, para esto se trabajo en base a un archivo `$ data.ghibl.js` que contiene todos los datos obtenidos de cada una de las películas del estudio Ghibli.
+Esta data incluye título, año de lanzamiento, poster promocional, director, productor , descripción y calificación RT. Además cada película incluye los datos respectivos de sus personajes principales, locaciones y vehículos.
+
+Para
+
+# 4. Actualización
+
+La idea del proyecto fue generar una página dinámica que pueda seguir mejorando su funcionalidad e interfaz con el paso del tiempo, es por esto que ahora que se tiene el prototipo básico funcionando, se espera seguir actualizando la página para completar la implementación asociada al prototipo de alta fidelidad y seguir maquetando mejoras asociadas a la necesidad de los usuarios que estén utilizando el servicio.
+Por el momento queda pendiente la ventana modal con la información general y personajes.
+
+###### Derechos de autor reservados a nombre de Mariem Padrón, Nelly Navaro e Isabella Monsalves.
+
+> Contacto: mjpadron11@gmail.com; nlly.rro@gmail.com; ester.isabella.m@gmail.com.

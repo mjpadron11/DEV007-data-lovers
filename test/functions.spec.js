@@ -1,15 +1,15 @@
-import { mostViewed } from "../src/data.js";
-import { allMovies } from "../src/data.js";
+import { sortYear } from "../src/functions.js";
+// import { allMovies } from "../src/data.js";
 
-describe("allMovies", () => {
-  it("debería ser un objeto", () => {
-    expect(typeof allMovies).toBe("object");
-  });
-});
+// describe("allMovies", () => {
+//   it("debería ser un objeto", () => {
+//     expect(typeof allMovies).toBe("object");
+//   });
+// });
 
-describe("mostView", () => {
+describe("sortYear", () => {
   it("is a function", () => {
-    expect(typeof mostViewed).toBe("function");
+    expect(typeof sortYear).toBe("function");
   });
 
   //   it("returns `example`", () => {

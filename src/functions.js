@@ -1,9 +1,6 @@
 import data from "./data/ghibli/ghibli.js";
 
-
-
 export const sortYear = (value) => {
-
   const films = data.films.slice();
 
   if (value === "decendant") {
@@ -15,25 +12,29 @@ export const sortYear = (value) => {
   }
 
   if (value === "year") {
-    films.sort((a, b) => (a.release_date).localeCompare(b.release_date));
+    films.sort((a, b) => a.release_date.localeCompare(b.release_date));
   }
 
   if (value === "rt-score") {
     films.sort((a, b) => Number(b.rt_score) - Number(a.rt_score));
   }
-  return films
+  return films;
 };
 
 export const searchMoviesByDirector = (selectedDirector) => {
-  const filterDirector = data.films.filter((item) => item.director === selectedDirector);
+  const filterDirector = data.films.filter(
+    (item) => item.director === selectedDirector
+  );
   return filterDirector;
 };
 
 export const searchMovies = (text) => {
-  if (!text || !text.value) return;
+  if (!text) {
+    return;
+  }
+
   const searchedMovies = data.films.filter((item) =>
     item.title.toLowerCase().includes(text.toLowerCase())
   );
-  return searchedMovies
+  return searchedMovies;
 };
-

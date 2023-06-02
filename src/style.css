@@ -393,21 +393,17 @@ ul>a {
   audio{
     display: none;
   }
+
   .aside{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    padding: 1rem 0;
-    background-color: rgb(5, 124, 124);
+    display: none;
   }
 
   ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     width: 100%;
-    height: 60px;
     background-color: transparent ;
   }
 
@@ -417,9 +413,9 @@ ul>a {
     font-size: 18px;
   }
 
-  .icon-container{
+  /* .icon-container{
     display: none;
-  }
+  } */
 
   main{
     width: 100%;
@@ -487,4 +483,50 @@ ul>a {
   .social{
     width: 100%;
   }
+
+  .hamburguerbtn{
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .hamburguerbtn.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburguerbtn.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguerbtn.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.aside.active{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(5, 124, 124, 2.51);;
+  /* transition: .3s; */
+  
+}
+
+li{
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+}
 }

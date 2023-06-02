@@ -8,6 +8,8 @@ const allMovies = document.getElementById("allMovies");
 const selectDirector = document.getElementById("directores");
 const filters = document.getElementById("filters");
 const text = document.getElementById("search-input");
+const hamburguer = document.getElementById("hamburguerbtn")
+const aside = document.getElementById("aside")
 
 
 export const forceRender = (valueToRender) => {
@@ -56,4 +58,14 @@ if (selectDirector) {
 }
 
 filters && filters.addEventListener("change", sortByYear);
+
+hamburguer.addEventListener("click", () => {
+  hamburguer.classList.toggle("active");
+  aside.classList.toggle("active")
+})
+
+document.getElementsByClassName("aside").forEach( n => n.addEventListener("click"), () => {
+  hamburguer.classList.remove("active")
+  aside.classList.remove("active")
+})
 

@@ -64,10 +64,10 @@ hamburguer.addEventListener("click", () => {
   aside.classList.toggle("active");
 });
 
-document.getElementsByClassName("aside").forEach(
-  (n) => n.addEventListener("click"),
-  () => {
+Array.from(document.getElementsByClassName("aside")).forEach((n) => {
+  n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     aside.classList.remove("active");
-  }
-);
+  });
+});
+

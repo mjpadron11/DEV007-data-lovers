@@ -1,28 +1,19 @@
 import { sortYear } from "../src/functions.js";
-// import { allMovies } from "../src/data.js";
-
-// describe("allMovies", () => {
-//   it("debería ser un objeto", () => {
-//     expect(typeof allMovies).toBe("object");
-//   });
-// });
+import { searchMovies } from "../src/functions.js";
+import { searchMoviesByDirector } from "../src/functions.js";
 
 describe("sortYear", () => {
   it("is a function", () => {
     expect(typeof sortYear).toBe("function");
   });
-
-  //   it("returns `example`", () => {
-  //     expect(example()).toBe("example");
-  //   });
-  // });
-
-  // describe("anotherExample", () => {
-  //   it("is a function", () => {
-  //     expect(typeof anotherExample).toBe("function");
-  //   });
-
-  //   it("returns `anotherExample`", () => {
-  //     expect(anotherExample()).toBe("OMG");
-  //   });
+});
+describe("searchMoviesByDirector", () => {
+  it("is a function", () => {
+    expect(typeof searchMoviesByDirector).toBe("function");
+  });
+});
+describe("searchMovies", () => {
+  it("is a function", () => {
+    expect(typeof searchMovies).toBe("function");
+  });
 });

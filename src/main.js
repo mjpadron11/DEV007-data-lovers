@@ -2,9 +2,10 @@ import { mostViewed } from "./data.js";
 import { movies } from "./data.js";
 import { searchMovies } from "./functions.js";
 import { searchMoviesByDirector } from "./functions.js";
-import { sortYear } from "./functions.js";
+import { sortYear } from "./functions.js"
 const gallery = document.getElementById("gallery");
 const allMovies = document.getElementById("allMovies");
+const searchInput = document.getElementById("search-input");
 const selectDirector = document.getElementById("directores");
 const filters = document.getElementById("filters");
 const text = document.getElementById("search-input");
@@ -49,10 +50,9 @@ if (gallery) window.addEventListener("load", mostViewed);
 
 if (allMovies) window.addEventListener("load", movies);
 
-if (text) {
-  text.addEventListener("input", searchBar);
+if (searchInput) {
+  searchInput.addEventListener("input", searchBar);
 }
-
 if (selectDirector) {
   selectDirector.addEventListener("change", director);
 }
@@ -64,10 +64,9 @@ hamburguer.addEventListener("click", () => {
   aside.classList.toggle("active");
 });
 
-document.getElementsByClassName("aside").forEach(
-  (n) => n.addEventListener("click"),
-  () => {
+Array.from(document.getElementsByClassName("aside")).forEach((n) => {
+  n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     aside.classList.remove("active");
-  }
-);
+  })
+})

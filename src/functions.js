@@ -4,11 +4,11 @@ export const sortYear = (value) => {
   const films = data.films.slice();
 
   if (value === "decendant") {
-    films.sort((a, b) => a.title.localeCompare(b.title));
+    films.sort((a, b) => b.title.localeCompare(a.title));
   }
 
   if (value === "ascendant") {
-    films.sort((a, b) => b.title.localeCompare(a.title));
+    films.sort((a, b) => a.title.localeCompare(b.title));
   }
 
   if (value === "year") {

@@ -5,6 +5,7 @@ const gallery = document.getElementById("gallery");
 
 //Se llaman películas más vistas al inicio
 export const mostViewed = () => {
+  console.log("Hola, mundo")
   const allPosters = data.films.filter((movies) => movies.most_viewed);
 
   const images = allPosters.map(({ poster, title, description }) => {
@@ -32,6 +33,8 @@ export const mostViewed = () => {
     gallery.appendChild(images[i]);
   }
 };
+
+
 //Se llaman todas las películas en menú películas
 export const movies = () => {
   //esto deja un array de string por lo que se crea una etiqueta imagen para poder insertar el poster
@@ -46,20 +49,13 @@ export const movies = () => {
     return img;
   });
   imagesMovies.map((image) => allMovies.appendChild(image));
+}
 
-  allMovies.querySelectorAll(".posters").forEach((pelicula) => {
-    pelicula.addEventListener("click", (e) => {
-      const movieObj = data.films.find((movie) => movie.title === e.target.alt);
-      console.log(movieObj);
-    });
-  });
-};
+// allMovies.querySelectorAll(".posters").forEach((pelicula) => {
+//   pelicula.addEventListener("click", (e) => {
+//     const movieObj = data.films.find((movie) => movie.title === e.target.alt);
+//     console.log(movieObj);
+//   });
+// });
 
-// export const searchMovies = () => {
-//   if (!text && !text.value) return;
-//   const searchedMovies = data.films.filter((item) =>
-//     //se cambia el star with por includes(busca si está en el array y da un boolean)
-//     item.title.toLowerCase().includes(text.value.toLowerCase())
-//   );
-//   return searchedMovies
-// };
+

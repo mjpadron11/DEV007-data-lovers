@@ -394,28 +394,11 @@ ul>a {
     display: none;
   }
 
-  .aside{
-    display: none;
-  }
-
-  ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    background-color: transparent ;
-  }
-
   li{
     display: flex;
     align-items: center;
     font-size: 18px;
   }
-
-  /* .icon-container{
-    display: none;
-  } */
 
   main{
     width: 100%;
@@ -504,6 +487,11 @@ ul>a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.aside{
+  height: 10%;
+  width: 100%;;
+}
+
 .aside.active{
   display: flex;
   position: fixed;
@@ -516,7 +504,6 @@ ul>a {
   text-align: center;
   background-color: rgba(5, 124, 124, 2.51);;
   /* transition: .3s; */
-  
 }
 
 li{
@@ -527,6 +514,14 @@ li{
 
 ul{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  background-color: transparent;
+  width: 100%;
+  height: 20px;
+  padding: 2rem 0 0 0;
+}
+
+.icon-container{
+  display: none;
 }
 }

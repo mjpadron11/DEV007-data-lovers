@@ -141,12 +141,14 @@ option{
     width: 100%;
   }
 
-  .aside{
-    display: none;
+  main{
+    justify-content: center;
+    padding: 2rem 0 0 0;
   }
 
   .container{
     box-sizing: border-box;
+    width: 100%;
   }
 
   .all-movies{
@@ -170,33 +172,45 @@ option{
 
   .hamburguerbtn.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
- }
+  }
 
- .hamburguerbtn.active .bar:nth-child(3){
+  .hamburguerbtn.active .bar:nth-child(3){
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  background-color: transparent ;
+  left: -100%;
+  transition: all .5s ease-in-out;
+}
 .aside.active{
   display: flex;
   position: fixed;
   flex-direction: column;
   z-index: 1000;
-  left: 0;
+  /* left: -100%; */
   top: 0;
   width: 100%;
   height: 100%;
   text-align: center;
-  /* transition: .3s; */
-  
+  transition: all .3s ease-in-out
 }
 
-li{
-  margin: 16px 0;
-}
+/* li{
+  margin: 16px;
+  left:0;
+} */
 
 ul{
   display: flex;
   flex-direction: column;
+  height: 100%;
+  align-items: center;
 }
 
 }

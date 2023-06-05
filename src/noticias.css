@@ -1,4 +1,4 @@
-.news-container{
+.news-container {
   max-width: 1200px;
   background-color: rgba(5, 74, 74, 0.512);
   border-radius: 30px;
@@ -6,7 +6,8 @@
   gap: 2rem;
 }
 
-.news-welcome-text{   display: flex;
+.news-welcome-text {
+  display: flex;
   flex-direction: column;
   text-align: left;
   flex-direction: center;
@@ -16,17 +17,17 @@
   font-family: "Roboto Mono", monospace;
 }
 
-h2{
+h2 {
   margin: 0;
 }
 
-.news-container > img{
+.news-container > img {
   width: 100%;
   padding: 2rem 0;
 }
 
-@media only screen and (max-width: 390px){
-  main{
+@media only screen and (max-width: 390px) {
+  main {
     padding: 6rem 1rem;
   }
 }

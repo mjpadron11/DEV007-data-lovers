@@ -1,0 +1,32 @@
+.news-container{
+  max-width: 1200px;
+  background-color: rgba(5, 74, 74, 0.512);
+  border-radius: 30px;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.news-welcome-text{   display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-direction: center;
+  gap: 1rem;
+  max-width: 1200px;
+  line-height: 1.5;
+  font-family: "Roboto Mono", monospace;
+}
+
+h2{
+  margin: 0;
+}
+
+.news-container > img{
+  width: 100%;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 390px){
+  main{
+    padding: 6rem 1rem;
+  }
+}

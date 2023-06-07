@@ -15,7 +15,9 @@
 
 ![](https://i.pinimg.com/originals/da/07/f0/da07f06bb1634c3065cc832fcbbaae54.jpg)
 
-Este sitio está dedicado a todos los amantes de las películas de Studio Ghibli, donde podrán disfrutar de una amplia gama de información, noticia y contenido multimedia relacionado con las películas del estudio. Desde los mundos mágicos y maravillosos de "El viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos conmovedores y emocionales de "La tumba de las luciérnagas" y "El viento se levanta", Studio Ghibli ha dejado una huella indeleble en el mundo del cine y la cultura popular.
+¿Sabías qué? Cada día generamos 2.5 millones de terabytes de datos, una cifra sin precedentes y para que esas grandes cantidades de datos se conviertan en información fácil de leer para los usuarios, necesitamos entender y procesar estos datos. Una manera simple de hacerlo es creando interfaces y visualizaciones.
+
+Hoy te presentamos este sitio que está dedicado a todos los amantes de las películas de Studio Ghibli, donde podrán disfrutar de una amplia gama de información, noticia y contenido multimedia relacionado con las películas del estudio. Desde los mundos mágicos y maravillosos de "El viaje de Chihiro" y "Mi vecino Totoro" hasta los relatos conmovedores y emocionales de "La tumba de las luciérnagas" y "El viento se levanta", Studio Ghibli ha dejado una huella indeleble en el mundo del cine y la cultura popular.
 
 ##### Esperamos que disfruten su visita y que esta sea el comienzo de una emocionante aventura en el mundo de Ghibli. ¡Bienvenidos al mundo de la magia y la creatividad!
 
@@ -25,7 +27,7 @@ El 15 de Junio de 1985 se fundó el estudio japonés de animación **Studio Ghib
 
 El presente proyecto se formó con la idea de traer al usuario información útil, llamativa y fácil de comprender a los usuarios, ya sea que estos tengan o no conocimiento de la existencia del estudio.
 
-Para lo anterior se ha desarrollado una página web de almacenamiento de datos que incluye las películas producidas por el estudio, detallando su argumento principal, principales personajes, locaciones y vehículos. En esta interfaz, el usuario podrá buscar y encontrar las películas de manera azarosa u ordenada, considerando como principales criterios de filtro el año de lanzamiento, director, productor o puntaje.
+Para lo anterior se ha desarrollado una página web de almacenamiento de datos que incluye las películas producidas por el estudio, detallando su argumento principal, principales personajes, locaciones y vehículos. En esta interfaz, el usuario podrá buscar y encontrar las películas de manera azarosa u ordenada de la A-Z, de la Z-A , considerando como principales criterios de filtro el año de lanzamiento, director, productor o puntaje.
 
 ![](https://img.europapress.es/fotoweb/fotonoticia_20140804175156-634869_600.jpg)
 
@@ -116,13 +118,39 @@ Una vez realizado el prototipo de baja fidelidad se comenzar a realizar su contr
 > Bosquejo de prototipo de alta fidelidad realizado en Figma
 
 #### Ejecución
+Luego de diseñar la interfaz de usuario para su ejecución e  implementación, se construye la interfaz muy apegado al diseño de alta fidelidad, priorizando los criterios mínimos para su funcionalidad, que son:
+
+- Permitir al usuario interactuar para obtener la infomación que necesita de acuerdo a las historias de usuario.
+- Ser responsive, es decir, debe visualizarse sin prob(Iphone 12 Pro).
+- Funcionalidad que corresponde a obtener, procesar y manipular datos como: Filtrar, ordenar de A-Z y de Z-A, opción de búsqueda.
+
+**a) Filtrar:** filterData(data, condition): esta función filter o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
+
+**b)sortData(data, sortBy, sortOrder):** esta función sort u ordenar recibe tres parámetros. El primer parámetro, data, nos entrega los datos. El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. El tercer parámetro, sortOrder, indica si se quiere ordenar de manera ascendente o descendente.
+
+La interfaz respeta los fundamentos de visual design y tiene consideraciones técnicas como la lógica del proyecto implementada completamente en JavaScript (ES6), HTML y CSS.
+
+![](/src/Images/iphone12.png)
+![](/src/Images/iphone12.1.png)
+![](/src/Images/iphone12.3.png)
+
+**src/data**
+En esta carpeta están los datos de las diferentes fuentes. Encontrarás una carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la extensión .js y otro .json. Ambos archivos contienen la misma data; la diferencia es que el .js esta llamada  a través de una etiqueta <script>, mientras que el .json está ahí para opcionalmente cargar la data de forma asíncrona con fetch().
+
+**test/data.spec.js**
+El boilerplate de este proyecto no incluye Pruebas Unitarias (tests), así es que se completaron de las funciones implementadas en el archivo data.js. para las funciones encargadas de procesar, filtrar y ordenar la data.
+
+Estas pruebas unitarias tienen una cobertura del 70% de statements (sentencias), functions (funciones), lines (líneas), y branches (ramas) del archivo src/data.js
 
 ##### Funcionalidad
 
-Las principales funcionalidades asociadas al proyecto fueron las de orden y filtro, para esto se trabajo en base a un archivo `$ data.ghibl.js` que contiene todos los datos obtenidos de cada una de las películas del estudio Ghibli.
+Las principales funcionalidades asociadas al proyecto fueron las de orden (ascendente y descendente) y filtro (de acuerdo al director), para esto se trabajo en base a un archivo `$ data.ghibl.js` que contiene todos los datos obtenidos de cada una de las películas del estudio Ghibli.
 Esta data incluye título, año de lanzamiento, poster promocional, director, productor , descripción y calificación RT. Además cada película incluye los datos respectivos de sus personajes principales, locaciones y vehículos.
+En l apágina principal podemos encontrar una pequeña descripción de lo que es el mundo de Ghibli y nuestra primera historia de usuario, que es mostrar las películas más vistas o en su mayor popularidad de la audiencia con una breve descripción, en la parte lateral izquierda vemos un conjunto de botones en la que nos lleva a la parte de pelíuclas en general, noticias y personajes de películas.
+En la página general de películas nos aparece en la parte del navegador tres botones, el primero de ellos que nos ayuda a ordenar de forma ascendente y descendente las películas, el orden por su año de creación y su St Score, el sigueitne botón tenemos la funcionalidad de filtro, esto de acuerdo a su director  y el siguiente el espacio de búsqueda, en la que podemos colocar cualquier palabra que coincida con algún títulos, nos aparecerá y por último un botos de "Inisio" que nos regresará a la página principal.
+Así como nuestra pàgina es acompañada con un tema m´sucias con la opcionalidad de reproducir en el momento que nosotros le indiquemos y en la parte del pie de pñagina tenemos las redes sociales oficiales por si estamos interesados en conocer más acerca del Estudio Ghibli
 
-Para
+
 
 # 4. Actualización
 

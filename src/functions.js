@@ -21,13 +21,6 @@ export const sortYear = (value) => {
   return films;
 };
 
-export const searchMoviesByDirector = (selectedDirector) => {
-  const filterDirector = data.films.filter(
-    (item) => item.director === selectedDirector
-  );
-  return filterDirector;
-};
-
 export const searchMovies = (text) => {
   if (!text) {
     return;
@@ -37,4 +30,10 @@ export const searchMovies = (text) => {
     item.title.toLowerCase().includes(text.toLowerCase())
   );
   return searchedMovies;
+};
+export const searchMoviesByDirector = (selectedDirector) => {
+  const filterDirector = data.films.filter(
+    (item) => item.director === selectedDirector
+  );
+  return filterDirector;
 };

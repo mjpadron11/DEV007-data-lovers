@@ -2,7 +2,7 @@ import { mostViewed } from "./data.js";
 import { movies } from "./data.js";
 import { searchMovies } from "./functions.js";
 import { searchMoviesByDirector } from "./functions.js";
-import { sortYear } from "./functions.js"
+import { sortYear } from "./functions.js";
 const gallery = document.getElementById("gallery");
 const allMovies = document.getElementById("allMovies");
 const searchInput = document.getElementById("search-input");
@@ -68,5 +68,5 @@ Array.from(document.getElementsByClassName("aside")).forEach((n) => {
   n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     aside.classList.remove("active");
-  })
-})
+  });
+});

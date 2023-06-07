@@ -118,7 +118,8 @@ Una vez realizado el prototipo de baja fidelidad se comenzar a realizar su contr
 > Bosquejo de prototipo de alta fidelidad realizado en Figma
 
 #### Ejecución
-Luego de diseñar la interfaz de usuario para su ejecución e  implementación, se construye la interfaz muy apegado al diseño de alta fidelidad, priorizando los criterios mínimos para su funcionalidad, que son:
+
+Luego de diseñar la interfaz de usuario para su ejecución e implementación, se construye la interfaz muy apegado al diseño de alta fidelidad, priorizando los criterios mínimos para su funcionalidad, que son:
 
 - Permitir al usuario interactuar para obtener la infomación que necesita de acuerdo a las historias de usuario.
 - Ser responsive, es decir, debe visualizarse sin prob(Iphone 12 Pro).
@@ -135,7 +136,7 @@ La interfaz respeta los fundamentos de visual design y tiene consideraciones té
 ![](/src/Images/iphone12.3.png)
 
 **src/data**
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la extensión .js y otro .json. Ambos archivos contienen la misma data; la diferencia es que el .js esta llamada  a través de una etiqueta <script>, mientras que el .json está ahí para opcionalmente cargar la data de forma asíncrona con fetch().
+En esta carpeta están los datos de las diferentes fuentes. Encontrarás una carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la extensión .js y otro .json. Ambos archivos contienen la misma data; la diferencia es que el .js esta llamada a través de una etiqueta <script>, mientras que el .json está ahí para opcionalmente cargar la data de forma asíncrona con fetch().
 
 **test/data.spec.js**
 El boilerplate de este proyecto no incluye Pruebas Unitarias (tests), así es que se completaron de las funciones implementadas en el archivo data.js. para las funciones encargadas de procesar, filtrar y ordenar la data.
@@ -147,10 +148,8 @@ Estas pruebas unitarias tienen una cobertura del 70% de statements (sentencias),
 Las principales funcionalidades asociadas al proyecto fueron las de orden (ascendente y descendente) y filtro (de acuerdo al director), para esto se trabajo en base a un archivo `$ data.ghibl.js` que contiene todos los datos obtenidos de cada una de las películas del estudio Ghibli.
 Esta data incluye título, año de lanzamiento, poster promocional, director, productor , descripción y calificación RT. Además cada película incluye los datos respectivos de sus personajes principales, locaciones y vehículos.
 En l apágina principal podemos encontrar una pequeña descripción de lo que es el mundo de Ghibli y nuestra primera historia de usuario, que es mostrar las películas más vistas o en su mayor popularidad de la audiencia con una breve descripción, en la parte lateral izquierda vemos un conjunto de botones en la que nos lleva a la parte de pelíuclas en general, noticias y personajes de películas.
-En la página general de películas nos aparece en la parte del navegador tres botones, el primero de ellos que nos ayuda a ordenar de forma ascendente y descendente las películas, el orden por su año de creación y su St Score, el sigueitne botón tenemos la funcionalidad de filtro, esto de acuerdo a su director  y el siguiente el espacio de búsqueda, en la que podemos colocar cualquier palabra que coincida con algún títulos, nos aparecerá y por último un botos de "Inisio" que nos regresará a la página principal.
+En la página general de películas nos aparece en la parte del navegador tres botones, el primero de ellos que nos ayuda a ordenar de forma ascendente y descendente las películas, el orden por su año de creación y su St Score, el sigueitne botón tenemos la funcionalidad de filtro, esto de acuerdo a su director y el siguiente el espacio de búsqueda, en la que podemos colocar cualquier palabra que coincida con algún títulos, nos aparecerá y por último un botos de "Inisio" que nos regresará a la página principal.
 Así como nuestra pàgina es acompañada con un tema m´sucias con la opcionalidad de reproducir en el momento que nosotros le indiquemos y en la parte del pie de pñagina tenemos las redes sociales oficiales por si estamos interesados en conocer más acerca del Estudio Ghibli
-
-
 
 # 4. Actualización
 
